@@ -92,94 +92,43 @@ de la taille d'une carte de crédit.
 
 4/ Les cas d'utilisation
 
-Cas d’utilisation 1 : Simulation de calculs parallèles
+##### Cas d’utilisation 1 : Simulation de calculs parallèles   
+    Nom : Simulation de calculs parallèles
+    Contexte d’utilisation : un visiteur veut lancer une simulation
+    Portée : site web
+    Niveau : utilisateur
+    Acteur principal : l’utilisateur
+    Intervenants et intérêts: l’intervenant est l'utilisateur et son intérêt est de pouvoir lancer une simulation
+    Précondition: l’utilisateur est allé sur la page permettant de lancer des simulations de calculs parallèles
+    Garantie minimale: l’utilisateur à accès à une présentation de la simulation
+    Garantie en cas de succès: L’utilisateur lance la simulation voulue.
+    Déclencheur: l’utilisateur clique sur le bouton “lancer"
+    Scénario nominal:
+    - L'utilisateur est sur la page d’accueil
+    - L’utilisateur se dirige vers la page permettant de lancer des simulations de calculs parallèles
+    - l’utilisateur clique sur le bouton “lancer" de la simulation voulue
+    Extension:
+    Liste des variantes:
+    Informations connexes:
 
-**Nom :** Simulation de calculs parallèles
-
-**Contexte d’utilisation :** un visiteur veut lancer une simulation
-
-**Portée :** site web
-
-**Niveau :** utilisateur
-
-**Acteur principal :** l’utilisateur
-
-**Intervenants et intérêts**: l’intervenant est l'utilisateur et son intérêt est de pouvoir
-
-lancer une simulation
-
-**Précondition**: l’utilisateur est allé sur la page permettant de lancer des simulations
-
-de calculs parallèles
-
-**Garantie minimale**: l’utilisateur à accès à une présentation de la simulation
-
-**Garantie en cas de succès**: L’utilisateur lance la simulation voulue.
-
-**Déclencheur**: l’utilisateur clique sur le bouton “lancer"
-
-**Scénario nominal**:
-
-1\. L'utilisateur est sur la page d’accueil
-
-2\. L’utilisateur se dirige vers la page permettant de lancer des simulations de
-
-calculs parallèles
-
-3\. l’utilisateur clique sur le bouton “lancer" de la simulation voulue
-
-**Extension**:
-
-**Liste des variantes**:
-
-**Informations connexes**:
-
-Cas d’utilisation 2 : Visionner les statistiques des différentes simulations
-
-**Nom :** Visionner les statistiques des différentes simulations
-
-**Contexte d’utilisation :** le gestionnaire veut visionner les statistiques d’utilisation
-
-des modules
-
-**Portée :** site web
-
-**Niveau :** utilisateur
-
-
-
-
-<a name="br4"></a> 
-
-**Acteur principal :** le gestionnaire
-
-**Intervenants et intérêts**: l’intervenant est le gestionnaire et son intérêt est de
-
-pouvoir visionner les statistiques d’utilisation des modules
-
-**Précondition**: le gestionnaire est allé sur la page permettant de visionner les
-
-statistiques d’utilisation des modules
-
-**Garantie minimale**: message d’erreur
-
-**Garantie en cas de succès**: le gestionnaire à accès aux statistiques
-
-**Déclencheur**: l’utilisateur clique sur le bouton “lancer"
-
-**Scénario nominal**:
-
-1\. Le gestionnaire est sur la page d’accueil
-
-2\. Le gestionnaire se dirige vers la page permettant visualiser les statistiques
-
-3\. Le gestionnaire visualise les statistiques
-
-**Extension**:
-
-**Liste des variantes**:
-
-**Informations connexes**:
+##### Cas d’utilisation 2 : Visionner les statistiques des différentes simulations
+    Nom : Visionner les statistiques des différentes simulations
+    Contexte d’utilisation : le gestionnaire veut visionner les statistiques d’utilisation des modules
+    Portée : site web
+    Niveau : utilisateur
+    Acteur principal : le gestionnaire
+    Intervenants et intérêts: l’intervenant est le gestionnaire et son intérêt est de pouvoir visionner les statistiques d’utilisation des modules
+    Précondition: le gestionnaire est allé sur la page permettant de visionner les statistiques d’utilisation des modules
+    Garantie minimale: message d’erreur
+    Garantie en cas de succès: le gestionnaire à accès aux statistiques
+    Déclencheur: l’utilisateur clique sur le bouton “lancer"
+    Scénario nominal:
+    - Le gestionnaire est sur la page d’accueil
+    - Le gestionnaire se dirige vers la page permettant visualiser les statistiques
+    - Le gestionnaire visualise les statistiques
+    Extension:
+    Liste des variantes:
+    Informations connexes:
 
 5/ Technologies employées
 
