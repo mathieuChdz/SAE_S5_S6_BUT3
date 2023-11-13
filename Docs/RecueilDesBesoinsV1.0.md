@@ -1,8 +1,8 @@
-﻿<a name="br1"></a> 
+<a name="br1"></a> 
 
 **Recueil des besoins**
 
-V 00.01
+V 1.00
 
 Guenfici Rayane | Chedozeau Mathieu | Renouf Ugo | Belaidi Elyas | Bullock Patrick
 
