@@ -1,8 +1,8 @@
-﻿<a name="br1"></a> 
+<a name="br1"></a> 
 
 **Cahier des charges**
 
-V 00.01
+V 1.00
 
 **1/ Introduction............................................................................................................1**
 
@@ -60,15 +60,12 @@ modèle optimisé pour la prédiction de données.
 
 Les différents prérequis peuvent se diviser en deux catégories :
 
-\-
 
-\-
-
-Au niveau des ressources matérielles, on retrouve l'utilisation d’un “*kit cluster*
+- Au niveau des ressources matérielles, on retrouve l'utilisation d’un “*kit cluster*
 
 *hat*” (4 Pi zero + un Kit Cluster Hat).
 
-Pour ce qui est des ressources logicielles, plusieurs logiciels sont à prévoir.
+- Pour ce qui est des ressources logicielles, plusieurs logiciels sont à prévoir.
 
 Premièrement, nous utiliserons GitLab pour le suivi ainsi que le versionnage
 
