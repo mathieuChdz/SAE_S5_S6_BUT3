@@ -37,7 +37,48 @@
 
 /* ########################### Body ########################### */
 
+html {
+    background-color: var(--color-black);
+    font-family: 'Archivo', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4em;
+}
+
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+}
+
+circle1 {
+    width: 10em;
+    border-radius: 1000px;
+    background: var(--color-green-primary);
+}
+
+.index-pres-title {
+    margin: 0px;
+}
+
+.pres-index-discover-link {
+    background-color: var(--color-green-primary);
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-weight: 700;
+}
+.pres-index-discover-link:hover {
+    cursor: pointer;
+    background-color: var(--color-green-primary-hover);
+}
+
+.pres-index-about-link{
+    padding: 12px 37px;
+    border-radius: 50px;
+    border: solid 3px var(--color-white);
+    color: var(--color-white);
+}
+.pres-index-about-link:hover {
+    cursor: pointer;
 }
