@@ -1,6 +1,6 @@
 <a name="br1"></a> 
 
-**Cahier des charges**
+# Cahier des charges
 
 V 1.00
 
@@ -12,7 +12,7 @@ V 1.00
 
 **4/ Priorités.................................................................................................................. 2**
 
-1/ Introduction
+## 1/ Introduction
 
 Ce document est le cahier des charges relatif au développement d'une
 
@@ -38,7 +38,7 @@ V XX.00 - Est la version "final" rendus à chaque sprint / livrables
 
 V 00.XX - Est la correction ou les ajouts après avoir publié, donné, versionné le document.
 
-2/ Énoncé
+## 2/ Énoncé
 
 L’objectif de ce projet est la mise en place d’une plateforme permettant
 
@@ -54,9 +54,8 @@ modèle optimisé pour la prédiction de données.
 
 
 
-<a name="br2"></a> 
 
-3/ Pré-requis
+## 3/ Pré-requis
 
 Les différents prérequis peuvent se diviser en deux catégories :
 
@@ -77,7 +76,7 @@ est du développement, nous utiliserons la suite de logiciels JetBrains.
 
 Les différents rapports seront réalisés en Markdown.
 
-4/ Priorités
+## 4/ Priorités
 
 Dans un premier temps, l’objectif est la configuration et la mise en place des
 
