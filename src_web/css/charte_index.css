@@ -37,7 +37,6 @@
 
 /* ########################### Body ########################### */
 
-<<<<<<< HEAD
 html {
     background-color: var(--color-black);
     font-family: 'Archivo', sans-serif;
@@ -46,21 +45,14 @@ html {
 h1 {
     font-weight: 900;
     font-size: 4em;
-=======
+}
+
 html{
     background-color: var(--color-black);
->>>>>>> 05581175499d2ee62540773fe567813add0cb363
 }
 
 body {
     margin: 0;
-<<<<<<< HEAD
-}
-
-circle1 {
-    width: 10em;
-    border-radius: 1000px;
-    background: var(--color-green-primary);
 }
 
 .index-pres-title {
@@ -87,8 +79,6 @@ circle1 {
 }
 .pres-index-about-link:hover {
     cursor: pointer;
-=======
-    font-family: 'Poppins', sans-serif;
 }
 
 .background{
@@ -115,5 +105,4 @@ circle1 {
 .circle2{
     background-color: var(--color-green-secondary);
     transform: translateX(0%) translateY(60%);
->>>>>>> 05581175499d2ee62540773fe567813add0cb363
 }
