@@ -1,15 +1,11 @@
-<a name="br1"></a> 
 
-**Recueil des besoins**
+# Recueil des besoins
 
 V 1.00
 
 Guenfici Rayane | Chedozeau Mathieu | Renouf Ugo | Belaidi Elyas | Bullock Patrick
 
 
-
-
-<a name="br2"></a> 
 
 **1/ Introduction............................................................................................................1**
 
@@ -23,66 +19,31 @@ Guenfici Rayane | Chedozeau Mathieu | Renouf Ugo | Belaidi Elyas | Bullock Patri
 
 **6/ Autres exigences................................................................................................... 2**
 
-1/ Introduction
 
-Ce document est le recueil des besoins relatif au développement d'une
+## 1/ Introduction
 
-application web permettant de réaliser des calculs parallèles | ML.
+Ce document est le recueil des besoins relatif au développement d'une application web permettant de réaliser des calculs parallèles | ML. Divisé en sept parties, dont cette introduction, ce document a pour objectif de recueillir les besoins du client à partir du cahier des charges client. Nous y inscrivons les objectifs et leur portée ainsi que le glossaire. Nous proposerons ensuite une analyse des cas d’utilisation. Enfin nous présenterons les technologies employées, les autres exigences ainsi que les recours humains, questions juridiques, politiques et organisationnelles.
 
-Divisé en sept parties, dont cette introduction, ce document a pour objectif de
 
-recueillir les besoins du client à partir du cahier des charges client. Nous y inscrivons
-
-les objectifs et leur portée ainsi que le glossaire. Nous proposerons ensuite une
-
-analyse des cas d’utilisation. Enfin nous présenterons les technologies employées,
-
-les autres exigences ainsi que les recours humains, questions juridiques, politiques
-
-et organisationnelles.
-
-2/ Objectif et portée
+## 2/ Objectif et portée
 
 ● **Objectif du Projet :**
 
-○ Mettre en place des programmes pour le calcul distribué ou parallèle
-
-sur le cluster ainsi que pour l’apprentissage automatique.
-
-○ Développer une interface web permettant aux utilisateurs de lancer des
-
-programmes.
-
-○ Afficher les résultats sur l'application web (courbes, matrices,
-
-diagrammes).
-
-○ Produire un court compte rendu sur les résultats.
+    ○ Mettre en place des programmes pour le calcul distribué ou parallèle sur le cluster ainsi que pour l’apprentissage automatique.
+    ○ Développer une interface web permettant aux utilisateurs de lancer desprogrammes.
+    ○ Afficher les résultats sur l'application web (courbes, matrices, diagrammes).
+    ○ Produire un court compte rendu sur les résultats.
 
 **● Intervenants :**
 
-○ Les intervenants sur l’application sont les visiteurs. Ce sont des
+    ○ Les intervenants sur l’application sont les visiteurs. Ce sont des personnes pouvant être n’importe voulant utiliser l’application.
+    ○ L’administrateur pourra voir le nombre d’utilisations par module via un dashboard
 
-personnes pouvant être n’importe voulant utiliser l’application.
+**● Portée :** 
 
-○ L’administrateur pourra voir le nombre d’utilisations par module via un
+    ○ Dans l’immédiat, la portée est limitée à l’IUT de Vélizy, car les visiteurs ne pourront provenir que de l’intérieur du réseau de l’IUT. À termes, le projet pourrait devenir public et sa portée illimitée.
 
-dashboard
-
-**● Portée :**
-
-
-
-
-<a name="br3"></a> 
-
-○ Dans l’immédiat, la portée est limitée à l’IUT de Vélizy, car les visiteurs
-
-ne pourront provenir que de l’intérieur du réseau de l’IUT. À termes, le
-
-projet pourrait devenir public et sa portée illimitée.
-
-3/ Terminologie - Glossaire
+## 3/ Terminologie - Glossaire
 
 **SAÉ :** Situation d'apprentissage et d'évaluation.
 
@@ -90,7 +51,7 @@ projet pourrait devenir public et sa portée illimitée.
 
 de la taille d'une carte de crédit.
 
-4/ Les cas d'utilisation
+## 4/ Les cas d'utilisation
 
 ##### Cas d’utilisation 1 : Simulation de calculs parallèles   
     Nom : Simulation de calculs parallèles
@@ -130,83 +91,47 @@ de la taille d'une carte de crédit.
     Liste des variantes:
     Informations connexes:
 
-5/ Technologies employées
+## 5/ Technologies employées
 
 ● Les différents prérequis peuvent se diviser en deux catégories :
 
-○ Au niveau des ressources matérielles, on retrouve l'utilisation d’un “*kit*
-
-*cluster hat*” (4 Pi zero + un Kit Cluster Hat).
-
-○ Pour ce qui est des ressources logicielles, plusieurs logiciels sont à
-
-prévoir. Premièrement, nous utiliserons GitLab pour le suivi ainsi que le
-
-versionnage du projet. Ensuite, pour la construction des maquettes, du
-
-logo et de la charte graphique, nous utiliserons Figma ainsi que la suite
-
-Adobe. Enfin, pour ce qui est du développement, nous utiliserons la
-
-suite de logiciels JetBrains.
+    ○ Au niveau des ressources matérielles, on retrouve l'utilisation d’un “*kit* *cluster hat*” (4 Pi zero + un Kit Cluster Hat).
+    ○ Pour ce qui est des ressources logicielles, plusieurs logiciels sont à prévoir. Premièrement, nous utiliserons GitLab pour le suivi ainsi que le versionnage du projet. Ensuite, pour la construction des maquettes, du logo et de la charte graphique, nous utiliserons Figma ainsi que la suite Adobe. Enfin, pour ce qui est du développement, nous utiliserons la suite de logiciels JetBrains.
 
 ● Les différents rapports seront réalisés en Markdown.
 
-6/ Autres exigences
+## 6/ Autres exigences
 
 ● Processus de développement :
 
-○ Les participants au projet sont l’équipe de développement et le Client
-
-qui sont respectivement notre groupe de SAE et M. Hoguin.
-
-○ Les valeurs que l'on va privilégier sont la souplesse et l’autonomie qui
-
-seront nécessaires pour le développement de l’application afin de
-
-pouvoir être apte à affronter toute éventualité qui pourrait retarder nos
-
-rendus.
-
-
-
-
-<a name="br5"></a> 
+    ○ Les participants au projet sont l’équipe de développement et le Client qui sont respectivement notre groupe de SAE et M. Hoguin.
+    ○ Les valeurs que l'on va privilégier sont la souplesse et l’autonomie qui seront nécessaires pour le développement de l’application afin de pouvoir être apte à affronter toute éventualité qui pourrait retarder nos rendus.
 
 ● Règles métier :
 
-Chaque utilisateur peut accéder ou interagir aux simulations du site
+    ○ Chaque utilisateur peut accéder ou interagir aux simulations du site web librement depuis la page d’accueil.
 
-web librement depuis la page d’accueil.
 
-7/ Recours humain, questions juridiques, politiques, organisationnelles
+## 7/ Recours humain, questions juridiques, politiques, organisationnelles
 
 ● Quel est le recours humain au fonctionnement du système?
 
-Le gestionnaire sera là afin de s’occuper du fonctionnement de l’application.
+    Le gestionnaire sera là afin de s’occuper du fonctionnement de l’application.
 
 ● Quelles sont les exigences politiques et juridiques?
 
-Aucune exigence n’est envisagée sur le site. Il s’agit seulement d’une
-
-application qui effectue des calculs parallèles | ML, aucune donnée n’est
-
-récoltée.
+    Aucune exigence n’est envisagée sur le site. Il s’agit seulement d’une application qui effectue des calculs parallèles | ML, aucune donnée n’est récoltée.
 
 ● Quelles sont les exigences technologiques pour ce système ?
 
-Ce système fournira des simulations diverses utiles aux utilisateurs via leur
-
-navigateur web.
+    Ce système fournira des simulations diverses utiles aux utilisateurs via leur navigateur web.
 
 ● Quels sont les besoins en formation?
 
-Aucun.
+    Aucun.
 
-● Quelles sont les hypothèses et les dépendances affectant l’environnement
+● Quelles sont les hypothèses et les dépendances affectant l’environnement humain?
 
-humain?
-
-Aucune.
+    Aucune.
 
 
