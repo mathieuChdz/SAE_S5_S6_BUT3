@@ -6,7 +6,6 @@ V 1.00
 
 Guenfici Rayane | Chedozeau Mathieu | Renouf Ugo | Belaidi Elyas | Bullock Patrick
 
-1
 
 
 
@@ -72,7 +71,6 @@ dashboard
 
 **● Portée :**
 
-2
 
 
 
@@ -148,7 +146,6 @@ des modules
 
 **Niveau :** utilisateur
 
-3
 
 
 
@@ -222,7 +219,6 @@ pouvoir être apte à affronter toute éventualité qui pourrait retarder nos
 
 rendus.
 
-4
 
 
 
@@ -264,5 +260,4 @@ humain?
 
 Aucune.
 
-5
 
