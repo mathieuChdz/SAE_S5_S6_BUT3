@@ -1,7 +1,8 @@
 /* ############################# . ############################# */
 /* ####################### Imports fonts ####################### */
 
-/*Font  */@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&display=swap');
 
 /* ############################ All ############################ */
 
@@ -35,36 +36,64 @@
     /*outline: 2px dashed #FF0000;*/
 }
 
-/* ########################### Body ########################### */
+/* ########################### Sections ########################### */
 
 html {
     background-color: var(--color-black);
-    font-family: 'Archivo', sans-serif;
-}
-
-h1 {
-    font-weight: 900;
-    font-size: 4em;
-}
-
-html{
-    background-color: var(--color-black);
+    font-family: Krona One, sans-serif;
 }
 
 body {
     margin: 0;
 }
 
-.index-pres-title {
+main {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+/* ########################### Textes ########################### */
+
+h1 {
+    font-weight: 900;
+    font-size: 2.5em;
+    color: var(--color-white);
+}
+
+h4 {
+    color: var(--color-white);
+}
+
+/* ########################### Index ########################### */
+
+.pres-index-container {
+    margin-top: 15%;
+    position: absolute;
+    z-index: 100;
+    width: var(--max-width-all);
+    max-width: var(--max-width-all);
+}
+
+.pres-index-links{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pres-index-title {
     margin: 0px;
 }
 
 .pres-index-discover-link {
     background-color: var(--color-green-primary);
-    padding: 15px 40px;
+    padding: 10px 30px;
     border-radius: 50px;
     color: var(--color-white);
-    font-weight: 700;
 }
 .pres-index-discover-link:hover {
     cursor: pointer;
@@ -72,9 +101,9 @@ body {
 }
 
 .pres-index-about-link{
-    padding: 12px 37px;
+    padding: 8px 28px;
     border-radius: 50px;
-    border: solid 3px var(--color-white);
+    border: solid 2px var(--color-white);
     color: var(--color-white);
 }
 .pres-index-about-link:hover {
@@ -87,22 +116,25 @@ body {
     top: 0;
     filter: blur(100px);
     overflow: hidden;
+    position: absolute;
+    z-index: 90;
 }
 
 .circle1,
 .circle2{
-    width: 30em;
-    height: 30em;
+    width: 40em;
+    height: 40em;
     border-radius: 50%;
     position: fixed;
+    opacity: 80%;
 }
 
 .circle1{
     background-color: var(--color-green-primary);
-    transform: translateX(180%) translateY(-50%);
+    transform: translateX(calc(100vw - 70%)) translateY(-50%);
 }
 
 .circle2{
     background-color: var(--color-green-secondary);
-    transform: translateX(0%) translateY(60%);
+    transform: translateX(-15%) translateY(90%);
 }
