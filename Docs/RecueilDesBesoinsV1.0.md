@@ -1,4 +1,3 @@
-
 # Recueil des besoins
 
 V 1.00
@@ -30,13 +29,13 @@ Ce document est le recueil des besoins relatif au développement d'une applicati
 ● **Objectif du Projet :**
 
     ○ Mettre en place des programmes pour le calcul distribué ou parallèle sur le cluster ainsi que pour l’apprentissage automatique.
-    ○ Développer une interface web permettant aux utilisateurs de lancer desprogrammes.
+    ○ Développer une interface web permettant aux utilisateurs de lancer des programmes.
     ○ Afficher les résultats sur l'application web (courbes, matrices, diagrammes).
     ○ Produire un court compte rendu sur les résultats.
 
 **● Intervenants :**
 
-    ○ Les intervenants sur l’application sont les visiteurs. Ce sont des personnes pouvant être n’importe voulant utiliser l’application.
+    ○ Les intervenants sur l’application sont les visiteurs. Ce sont des personnes pouvant être n’importe qui voulant utiliser l’application.
     ○ L’administrateur pourra voir le nombre d’utilisations par module via un dashboard
 
 **● Portée :** 
@@ -61,9 +60,9 @@ de la taille d'une carte de crédit.
     Acteur principal : l’utilisateur
     Intervenants et intérêts: l’intervenant est l'utilisateur et son intérêt est de pouvoir lancer une simulation
     Précondition: l’utilisateur est allé sur la page permettant de lancer des simulations de calculs parallèles
-    Garantie minimale: l’utilisateur à accès à une présentation de la simulation
+    Garantie minimale: l’utilisateur a accès à une présentation de la simulation
     Garantie en cas de succès: L’utilisateur lance la simulation voulue.
-    Déclencheur: l’utilisateur clique sur le bouton “lancer"
+    Déclencheur: l’utilisateur clique sur le bouton "lancer"
     Scénario nominal:
     - L'utilisateur est sur la page d’accueil
     - L’utilisateur se dirige vers la page permettant de lancer des simulations de calculs parallèles
@@ -81,7 +80,7 @@ de la taille d'une carte de crédit.
     Intervenants et intérêts: l’intervenant est le gestionnaire et son intérêt est de pouvoir visionner les statistiques d’utilisation des modules
     Précondition: le gestionnaire est allé sur la page permettant de visionner les statistiques d’utilisation des modules
     Garantie minimale: message d’erreur
-    Garantie en cas de succès: le gestionnaire à accès aux statistiques
+    Garantie en cas de succès: le gestionnaire a accès aux statistiques
     Déclencheur: l’utilisateur clique sur le bouton “lancer"
     Scénario nominal:
     - Le gestionnaire est sur la page d’accueil
@@ -105,7 +104,7 @@ de la taille d'une carte de crédit.
 ● Processus de développement :
 
     ○ Les participants au projet sont l’équipe de développement et le Client qui sont respectivement notre groupe de SAE et M. Hoguin.
-    ○ Les valeurs que l'on va privilégier sont la souplesse et l’autonomie qui seront nécessaires pour le développement de l’application afin de pouvoir être apte à affronter toute éventualité qui pourrait retarder nos rendus.
+    ○ Les valeurs que l'on va privilégier sont la souplesse et l’autonomie qui seront nécessaires pour le développement de l’application afin de pouvoir être apte à faire face à toute éventualité qui pourrait retarder nos rendus.
 
 ● Règles métier :
 
