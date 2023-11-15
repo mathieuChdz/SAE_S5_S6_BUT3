@@ -70,6 +70,52 @@ h4 {
 
 /* ########################### Index ########################### */
 
+nav{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+}
+main{
+    position: absolute;
+    z-index: 90;
+}
+
+.global-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+.global-navbar-logo img{
+    width: 5em;
+    height: 5em;
+}
+
+.global-navbar-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    align-items: center;
+}
+
+.global-navbar-links a{
+    font-weight: 200;
+}
+
+.global-navbar-links a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 5px var(--color-white);
+}
+
+.global-navbar-links-connexion{
+    background-color: var(--color-green-primary);
+    padding: 7px 25px;
+    border-radius: 50px;
+}
+
 .pres-index-container {
     margin-top: 15%;
     position: absolute;
@@ -89,25 +135,35 @@ h4 {
     margin: 0px;
 }
 
-.pres-index-discover-link {
+.pres-index-discover-link,
+.pres-index-about-link,
+.global-navbar-links a{
+    color: var(--color-white);
+    font-size: 0.85em;
+}
+
+.pres-index-discover-link-container {
     background-color: var(--color-green-primary);
     padding: 10px 30px;
     border-radius: 50px;
-    color: var(--color-white);
-}
-.pres-index-discover-link:hover {
-    cursor: pointer;
-    background-color: var(--color-green-primary-hover);
 }
 
-.pres-index-about-link{
+.pres-index-discover-link-container:hover,
+.global-navbar-links-connexion:hover{
+    cursor: pointer;
+    background-color: var(--color-green-primary-hover);
+    transition: all 0.15s;
+}
+
+.pres-index-about-link-container{
     padding: 8px 28px;
     border-radius: 50px;
     border: solid 2px var(--color-white);
-    color: var(--color-white);
 }
-.pres-index-about-link:hover {
+.pres-index-about-link-container:hover {
     cursor: pointer;
+    box-shadow: 0px 0px 5px 1px var(--color-white);
+    transition: all 0.1s;
 }
 
 .background{
@@ -117,7 +173,7 @@ h4 {
     filter: blur(100px);
     overflow: hidden;
     position: absolute;
-    z-index: 90;
+    z-index: 10;
 }
 
 .circle1,
