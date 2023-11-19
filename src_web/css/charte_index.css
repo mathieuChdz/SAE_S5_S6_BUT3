@@ -66,6 +66,7 @@ h1 {
 
 h4 {
     color: var(--color-white);
+    font-weight: 100;
 }
 
 /* ########################### Index ########################### */
@@ -87,6 +88,10 @@ main{
     flex-direction: row;
     justify-content: center;
     gap: 2em;
+}
+
+.global-navbar-logo:hover{
+    cursor: pointer;
 }
 
 .global-navbar-logo img{
@@ -250,6 +255,7 @@ main{
 .main-items-item{
     width: 30%;
     height: 15em;
-    background-color: white;
-    border-radius: 2em;
+    background-color: #ffffff1a;
+    border-radius: 1em;
+    border: 2px solid #ffffff0f;
 }
