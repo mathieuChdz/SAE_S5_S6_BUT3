@@ -244,48 +244,6 @@ h4 {
     border: 2px solid #ffffff0f;
 }
 
-/* ########################### Modules page ########################### */
-
-.main-form-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    z-index: 90;
-}
-
-.main-form{
-    width: 30%;
-    height: 80vh;
-    background-color: #ffffff1a;
-    border-radius: 1em;
-    border: 2px solid #ffffff0f;
-    color: var(--color-white);
-    font-size: 0.8em;
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
-    /* align-items: center; */
-    justify-content: center;
-}
-
-.form-email,
-.form-password{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.form-email input[type="text"],
-.form-password input[type="text"]{
-    height: 2.5em;
-    border-radius: 0.5em;
-    padding-left: 1em;
-}
-
 /* ########################### Footer ########################### */
 
 .footer-main{

@@ -33,6 +33,7 @@
 
 /* ########################### Connexion page ########################### */
 
+
 .main-form-container{
     width: 100%;
     display: flex;
@@ -96,6 +97,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 3em;
 }
 
 .main-form-container .form-email,
