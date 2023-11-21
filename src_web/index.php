@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
     <head>
         <title>Learn To Me</title>
@@ -19,23 +19,9 @@
         <header>
         </header>
 
-        <nav>
-            <div class="global-navbar-content">
-                <div class="global-navbar-logo">
-                    <a href="index.html"><img src="img/logo_ltm_w.svg" alt="logo LTM white"></a>
-                </div>
-
-                <div class="global-navbar-links">
-                    <a href="index.html">Accueil</a>
-                    <a href="modules.html">Modules</a>
-                    <a href="#">A propos</a>
-
-                    <div class="global-navbar-links-connexion">
-                        <a href="connexion.html">Se connecter</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <?php 
+        include("imports/navbar.html");
+        ?>
 
         <main>
             <div class="container-background">
@@ -61,12 +47,9 @@
             </div>
         </main>
 
-        <footer>
-            <div class="footer-main">
-                <span></span>
-                <p>Copyright © 2023 SAE S5 GRP 3. Tous droits réservés.</p>
-            </div>
-        </footer>
+        <?php 
+            include("imports/footer.html");
+        ?>
 
     </body>
 
