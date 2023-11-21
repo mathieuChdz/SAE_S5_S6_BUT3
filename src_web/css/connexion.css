@@ -1,0 +1,73 @@
+/* ########################### Connexion page ########################### */
+
+.main-form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 90;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width:30em;
+    min-width: 30em;
+    height: 80vh;
+    background-color: #ffffff1a;
+    border-radius: 1em;
+    border: 2px solid #ffffff0f;
+    color: var(--color-white);
+    font-size: 0.8em;
+}
+
+.form-inputs{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.form-email,
+.form-password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.form-email input[type="text"],
+.form-password input[type="text"]{
+    height: 2.5em;
+    border-radius: 0.5em;
+    padding-left: 1em;
+}
+
+.main-form-container form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form-container .form-email,
+.main-form-container .form-password,
+.main-form-container .form-submit{
+    text-align: center;
+    width: auto;
+}
+
+.main-form-container .form-submit input[type="submit"]{
+    height: 2.5em;
+    border-radius: 0.5em;
+    padding: 0 20%;
+}
+
+.form-container-title{
+    text-align: center;
+}
