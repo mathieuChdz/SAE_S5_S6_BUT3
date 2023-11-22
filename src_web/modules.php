@@ -31,15 +31,80 @@
     ?>
 
     <main>
-        <div class="main-items-container">
-            <div class="main-items">
-                <div class="main-items-item" id="1"></div>
-                <div class="main-items-item" id="2"></div>
-                <div class="main-items-item" id="3"></div>
-                <div class="main-items-item" id="4"></div>
+
+        <div class="main-container">
+            <div class="main-explication">
+                <div class="main-explication-title">
+                    <h2>Modules disponibles</h2>
+                </div>
+                <div class="main-explication-texte">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                </div>
+            </div>
+
+            <div class="main-items-container">
+                <div class="main-items">
+                    <div class="main-items-item" id="1">
+                        <div class="item-main">
+                            <div class="item-main-title">
+                                <h3>Module 1</h3>
+                            </div>
+                            <div class="item-main-texte">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="item-main-link">
+                                <a href="#">En savoir plus -></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-items-item" id="2">
+                        <div class="item-main">
+                            <div class="item-main-title">
+                                <h3>Module 2</h3>
+                            </div>
+                            <div class="item-main-texte">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="item-main-link">
+                                <a href="#">En savoir plus -></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-items-item" id="3">
+                        <div class="item-main">
+                            <div class="item-main-title">
+                                <h3>Module 3</h3>
+                            </div>
+                            <div class="item-main-texte">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="item-main-link">
+                                <a href="#">En savoir plus -></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-items-item" id="4">
+                        <div class="item-main">
+                            <div class="item-main-title">
+                                <h3>Module 4</h3>
+                            </div>
+                            <div class="item-main-texte">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="item-main-link">
+                                <a href="#">En savoir plus -></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
 
     </main>
 

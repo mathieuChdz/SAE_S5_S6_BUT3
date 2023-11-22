@@ -216,6 +216,19 @@ h4 {
 
 /* ########################### Modules page ########################### */
 
+.main-container{
+    z-index: 90;
+    max-width: var(--max-width-all);
+}
+
+.main-explication{
+    color: var(--color-white);
+}
+
+.main-explication-texte{
+    opacity: 0.7;
+}
+
 .main-items-container{
     display: flex;
     flex-direction: row;
@@ -231,17 +244,47 @@ h4 {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    max-width: var(--max-width-all);
     z-index: 95;
     gap: 3em;
 }
 
 .main-items-item{
     width: 30%;
+    min-width: 17em;
     height: 15em;
     background-color: #ffffff1a;
     border-radius: 1em;
     border: 2px solid #ffffff0f;
+}
+
+.item-main{
+    width: 100%;
+    padding: 0 10%;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: start;
+    vertical-align: center;
+}
+
+.item-main-texte,
+.item-main-link{
+    font-size: 0.7em;
+}
+
+.item-main-texte p{
+    opacity: 0.5;
+}
+
+.item-main-link{
+    text-align: end;
+    padding-top: 1em;
+}
+
+.item-main-link a{
+    color: var(--color-white);
+    text-shadow: 0px 0px 1px var(--color-white);
 }
 
 /* ########################### Footer ########################### */

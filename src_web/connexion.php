@@ -37,15 +37,19 @@
                     </div>
                     <div class="form-inputs">
                         <div class="form-email">
-                            <label for="email">Email : </label>
+                            <label for="email">Email</label>
                             <input type="text" name="email" id="email" placeholder="email">
                         </div>
                         <div class="form-password">
-                            <label for="password">Password : </label>
-                            <input type="password" name="password" id="password" placeholder="password">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" name="password" id="password" placeholder="mot de passe">
                         </div>
                         <div class="form-submit">
                             <input type="submit" name="envoyer" id="envoyer" value="Se connecter">
+                            <div class="form-inscription">
+                                <p>Vous n’avez pas de compte ?</p>
+                                <a href="#">Cliquez Ici !</a>
+                            </div>
                         </div>
                     </div>
                 </div>
