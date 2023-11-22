@@ -1,4 +1,4 @@
-﻿# **Calcul nombres premiers Version : 1.0 | Document : Dossier de tests | Date 21/11/2023**
+# **Calcul nombres premiers Version : 1.0 | Document : Dossier de tests | Date 21/11/2023**
 
   
 
@@ -66,7 +66,7 @@ Tests à appliquer : Calculs dans une loi normale Responsable de la campagne de 
   
   
 
-|Outils utilisé : [https://www.dcode.fr/prime-numbers-search](https://www.codabrainy.com/loi-normale)|Version : 1.0||
+|Outils utilisé : [https://www.dcode.fr/prime-numbers-search](https://www.dcode.fr/prime-numbers-search)|Version : 1.0||
 | - | :- | :- | 
 ||||
 |Classe|N|Résultat attendu (R)|
