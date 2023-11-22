@@ -49,15 +49,15 @@ Le résultat pour chaque variable sera calculé avec un calculateur en ligne, pu
   
   
 
-Produit testé : Module de calcul de loi normale Date de début : 22/11/2022
+Produit testé : Module de calcul de nombres premiers Date de début : 21/11/2023
 
   
 
-Date de finalisation : 24/11/2022
+Date de finalisation : 22/11/2023
 
   
 
-Tests à appliquer : Calculs dans une loi normale Responsable de la campagne de test : Belaidi Elyas
+Tests à appliquer : Calcul de l'effectif des nombres premiers de 1 à n Responsable de la campagne de test : Belaidi Elyas
 
   
 
