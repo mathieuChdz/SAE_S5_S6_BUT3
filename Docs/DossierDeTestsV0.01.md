@@ -82,7 +82,7 @@ Tests à appliquer : Calculs dans une loi normale Responsable de la campagne de 
   
   
 
-|Identification du test : Calcul de l'effectif des nombres premiers compris entre 1 et n |Version : 2.0||
+|Identification du test : Calcul de l'effectif des nombres premiers compris entre 1 et n |Version : 1.0||
 | - | :- | :- | 
 ||||
 |Classe|N|Résultat obtenu (R)|
