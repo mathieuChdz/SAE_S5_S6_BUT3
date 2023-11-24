@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Learn To Me</title>
     <link href="img/logo_ltm_w_mini.svg" rel="icon">
-    <link href="css/charte_index.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
