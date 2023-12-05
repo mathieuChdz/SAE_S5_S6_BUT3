@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="img/logo_ltm_w_mini.svg" rel="icon">
-        <link href="css/charte_index.css" rel="stylesheet">
+        <link href="css/css.css" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,17 +31,19 @@
                 </div>
             </div>
 
-            <div class="pres-index-container">
-                <h1 class="pres-index-title">Learn To Me !</h1>
-                <h4>Prédire vos calculs simplement, en quelques cliques !</h4>
+            <div class="main-container">
+                <div class="pres-index-container">
+                    <h1 class="pres-index-title">Learn To Me !</h1>
+                    <h4>Prédire vos calculs simplement, en quelques cliques !</h4>
 
-                <div class="pres-index-links">
-                    <div class="pres-index-discover-link-container">
-                        <a class="pres-index-discover-link" href="#">Découvrir comment !</a>
-                    </div>
+                    <div class="pres-index-links">
+                        <div class="pres-index-discover-link-container">
+                            <a class="pres-index-discover-link" href="#">Découvrir comment !</a>
+                        </div>
 
-                    <div class="pres-index-about-link-container">
-                        <a class="pres-index-about-link" href="#">A propos</a>
+                        <div class="pres-index-about-link-container">
+                            <a class="pres-index-about-link" href="#">A propos</a>
+                        </div>
                     </div>
                 </div>
             </div>

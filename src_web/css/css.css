@@ -4,6 +4,7 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krona+One&display=swap');
 
+
 /* ######################## All / Root ######################### */
 
 :root {
@@ -39,6 +40,7 @@
     /*outline: 2px dashed #FF0000;*/
 }
 
+
 /* ########################### Sections ########################### */
 
 html {
@@ -68,6 +70,7 @@ main {
     justify-content: center;
 }
 
+
 /* ########################### Textes ########################### */
 
 h1 {
@@ -81,6 +84,7 @@ h4 {
     font-weight: 100;
 }
 
+
 /* ########################### Background ########################### */
 
 .container-background{
@@ -90,7 +94,6 @@ h4 {
     top: 0;
     overflow: hidden;
     position: absolute;
-    z-index: 10;
 }
 
 .background{
@@ -127,6 +130,7 @@ h4 {
     padding: 0 var(--margin-all);
     height: 80px;
     align-items: center;
+    width: 100%;
 }
 
 .global-navbar-logo:hover{
@@ -160,7 +164,15 @@ h4 {
     border-radius: 50px;
 }
 
+
 /* ########################### Index ########################### */
+
+.main-container{
+    max-width: var(--max-width-all);
+    width: 100%;
+    height: 100vh;
+    padding: 80px 20px 20px 20px;
+}
 
 .pres-index-container {
     margin-top: 15%;
@@ -215,11 +227,6 @@ h4 {
 
 
 /* ########################### Modules page ########################### */
-
-.main-container{
-    z-index: 90;
-    max-width: var(--max-width-all);
-}
 
 .main-explication{
     color: var(--color-white);
@@ -286,6 +293,118 @@ h4 {
     color: var(--color-white);
     text-shadow: 0px 0px 1px var(--color-white);
 }
+
+
+/* ########################### Connexion page ########################### */
+
+.main-form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 90;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width:30em;
+    min-width: 30em;
+    height: auto;
+    background-color: #ffffff1a;
+    border-radius: 1em;
+    border: 2px solid #ffffff0f;
+    color: var(--color-white);
+    font-size: 0.8em;
+    gap: 4em;
+}
+
+.form-inputs{
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.form-email,
+.form-password{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 10%;
+    gap: 1em;
+}
+
+.form-email label,
+.form-password label{
+    padding-left: 1em;
+}
+
+.form-email input[type="text"],
+.form-password input[type="password"]{
+    width: 100%;
+    height: 2.5em;
+    border-radius: 1.5em;
+    padding-left: 1em;
+    /* background: linear-gradient(90deg, rgba(10, 91, 0, 0.2) 0%, rgba(17, 167, 34, 0.2) 100%); */
+    background: var(--color-black);
+    border: solid 1px var(--color-white);
+    opacity: 0.8;
+}
+
+.form-email ::placeholder,
+.form-password ::placeholder{
+    color: var(--color-white);
+    opacity: 0.8;
+}
+
+.main-form-container form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.main-form-container .form-email,
+.main-form-container .form-password,
+.main-form-container .form-submit{
+    text-align: center;
+    width: auto;
+}
+
+.main-form-container .form-submit input[type="submit"]{
+    height: 2.5em;
+    border-radius: 1.5em;
+    padding: 0 20%;
+    background: var(--color-green-primary);
+    color: rgba(242, 242, 242, 0.8);
+}
+
+.form-container-title{
+    text-align: center;
+}
+
+.form-submit .form-inscription{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.form-submit .form-inscription a{
+    color: var(--color-white);
+    text-shadow: 0px 0px 1px var(--color-white);
+}
+
 
 /* ########################### Footer ########################### */
 
