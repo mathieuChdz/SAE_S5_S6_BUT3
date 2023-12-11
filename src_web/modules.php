@@ -17,20 +17,18 @@
 
     <header>
     </header>
-    
-
-    <div class="container-background">
-        <div class="background">
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-        </div>
-    </div>
 
     <?php 
         include("imports/navbar.html");
     ?>
-
+    
     <main>
+        <div class="container-background">
+            <div class="background">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </div>
+        </div>
 
         <div class="main-container">
             <div class="main-explication">
@@ -38,9 +36,9 @@
                     <h2>Modules disponibles</h2>
                 </div>
                 <div class="main-explication-texte">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
                 </div>
             </div>
 
@@ -105,7 +103,6 @@
                 </div>
             </div>
         </div>
-
     </main>
 
     <?php 
