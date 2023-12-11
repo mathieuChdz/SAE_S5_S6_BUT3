@@ -291,7 +291,7 @@ p{
 }
 
 .item-main-texte p{
-    opacity: 0.5;
+    color: #f2f2f2ba;
 }
 
 .item-main-link{
@@ -423,6 +423,18 @@ p{
     text-shadow: 0px 0px 1px var(--color-white);
 }
 
+
+/* ########################### Module Monte Carlo page ########################### */
+
+.explication-monte-carlo-container{
+    color: var(--color-white);
+}
+
+.main-graphique img{
+    border-radius: 5%;
+    width: 20em;
+    height: 20em;
+}
 
 /* ########################### Footer ########################### */
 
