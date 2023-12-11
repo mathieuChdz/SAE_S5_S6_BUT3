@@ -11,19 +11,29 @@
     /* Widths */
     --max-width-all: 1200px;
 
+    /* Sizes */
+    --font-size-xs: 0.6em;
+    --font-size-s: 0.75em;
+    --font-size-m: ;
+    --font-size-l: ;
+    --font-size-xl: ;
+
     /* Margin */
     --margin-all: 20px;
 
     /* Colors */
+    --color-black: #202020;
+    --color-white: #F2F2F2;
 
-    --color-black : #202020;
-    --color-white : #F2F2F2;
+    --color-grey-light: #c7c7c7;
+    --color-grey-medium: #616161;
+    --color-grey-dark: ;
 
-    --color-green-primary : #11A722;
-    --color-green-primary-hover : #0B8419;
+    --color-green-primary: #11A722;
+    --color-green-primary-hover: #0B8419;
 
-    --color-green-secondary : #0A6100;
-    --color-green-secondary-hover : #0C7800;
+    --color-green-secondary: #0A6100;
+    --color-green-secondary-hover: #0C7800;
 
 }
 
@@ -87,7 +97,7 @@ footer {
 
 /* ########################### Textes ########################### */
 
-h1, h2, h3, h4, a, p{
+h1, h2, h3, h4 {
     
 }
 
@@ -102,8 +112,9 @@ h4 {
     font-weight: 100;
 }
 
-p{
-
+p, a {
+    color: var(--color-grey-light);
+    font-size: var(--font-size-s);
 }
 
 
@@ -191,6 +202,53 @@ p{
 }
 
 
+/* ########################### Footer ########################### */
+
+.footer-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 var(--margin-all);
+    max-width: var(--max-width-all);
+    padding-top: var(--margin-all);
+}
+
+.foot-content-title {
+    color: var(--color-white);
+    font-size: var(--font-size-s);
+}
+
+.foot-content-link {
+    color: var(--color-grey-light);
+    font-size: var(--font-size-s);
+}
+.foot-content-link:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.separator-grey {
+    background-color: var(--color-grey-medium);
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.footer-copy-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-copy{
+    color: var(--color-white);
+    font-size: var(--font-size-xs);
+    font-weight: 200;
+}
+
+
 /* ########################### Index ########################### */
 
 .main-container{
@@ -260,14 +318,13 @@ p{
 }
 
 .main-explication-texte{
-    opacity: 0.7;
+
 }
 
 .main-items-container{
     display: flex;
     flex-direction: row;
     width: 100%;
-    z-index: 95;
     align-items: center;
     justify-content: center;
     margin-top: 5em;
@@ -278,7 +335,6 @@ p{
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    z-index: 95;
     gap: 3em;
 }
 
@@ -298,13 +354,6 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-content: start;
-    vertical-align: center;
-}
-
-.item-main-texte,
-.item-main-link{
-    font-size: 0.7em;
 }
 
 .item-main-texte p{
@@ -338,7 +387,6 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    z-index: 90;
 }
 
 .main-form{
@@ -361,7 +409,6 @@ p{
     display: flex;
     flex-direction: column;
     gap: 3em;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -389,13 +436,11 @@ p{
     /* background: linear-gradient(90deg, rgba(10, 91, 0, 0.2) 0%, rgba(17, 167, 34, 0.2) 100%); */
     background: var(--color-black);
     border: solid 1px var(--color-white);
-    opacity: 0.8;
 }
 
 .form-email ::placeholder,
 .form-password ::placeholder{
     color: var(--color-white);
-    opacity: 0.8;
 }
 
 .main-form-container form{
@@ -451,32 +496,4 @@ p{
     border-radius: 5%;
     width: 20em;
     height: 20em;
-}
-
-/* ########################### Footer ########################### */
-
-.footer-main{
-    background-color: var(--color-black);
-    width: 100%;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 0.5em;
-    padding-top: 3em;
-}
-
-.footer-main p{
-    color: var(--color-white);
-    font-size: 0.7em;
-    font-weight: 200;
-}
-
-.footer-main span{
-    background-color: var(--color-white);
-    width: 90%;
-    height: 1px;
-    opacity: 0.5;
 }
