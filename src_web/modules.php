@@ -46,7 +46,7 @@
                                     <h3>Monte Carlo</h3>
                                 </div>
                                 <div class="item-main-texte">
-                                    <p>Ce module de <b>calcul distribué</b> permet de calculer, à l'aide de la méthode de Monte Carlo, le nombre Pi. L'objectif ici est l'optimisation du temps d'execution
+                                    <p>Ce module permet de calculer, à l'aide de la méthode de Monte Carlo, le nombre Pi. L'objectif ici est l'optimisation du temps d'execution
                                         par la répartition de cette même execution sur différentes machines.
                                     </p>
                                 </div>
@@ -58,14 +58,14 @@
                         <div class="main-items-item" id="2">
                             <div class="item-main">
                                 <div class="item-main-title">
-                                    <h3>Module 2</h3>
+                                    <h3>Nombres premier</h3>
                                 </div>
                                 <div class="item-main-texte">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>Ce module de <b>calcul distribué</b> offre la possibilité à l'utilisateur une expérience de calcul distribué en calculant tous les 
+                                    nombres premiers de 1 à N et en constatant la différence de temps d'exécution.</p>
                                 </div>
                                 <div class="item-main-link">
-                                    <a href="#">En savoir plus -></a>
+                                    <a href="module_nombres_premiers.php">En savoir plus -></a>
                                 </div>
                             </div>
                         </div>

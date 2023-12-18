@@ -362,7 +362,7 @@ p, a {
 
 .item-main-link{
     text-align: end;
-    padding-top: 1em;
+    /* padding-top: 1em; */
 }
 
 .item-main-link a{
@@ -487,13 +487,3 @@ p, a {
 
 
 /* ########################### Module Monte Carlo page ########################### */
-
-.explication-monte-carlo-container{
-    color: var(--color-white);
-}
-
-.main-graphique img{
-    border-radius: 5%;
-    width: 20em;
-    height: 20em;
-}
