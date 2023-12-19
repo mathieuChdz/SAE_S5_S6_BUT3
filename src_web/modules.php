@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="item-main-texte">
                                     <p>Ce module de <b>calcul distribué</b> offre la possibilité à l'utilisateur une expérience de calcul distribué en calculant tous les 
-                                    nombres premiers de 1 à N et en constatant la différence de temps d'exécution.</p>
+                                    nombres premiers de 2 à N et en constatant la différence de temps d'exécution.</p>
                                 </div>
                                 <div class="item-main-link">
                                     <a href="module_nombres_premiers.php">En savoir plus -></a>

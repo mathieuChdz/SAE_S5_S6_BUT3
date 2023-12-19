@@ -103,7 +103,7 @@
                                                 <input type="text" name="T1" id="T1" placeholder="T1">
                                             </div>
                                             <div class="form-submit">
-                                                <input type="submit" name="envoyer" id="envoyer" value="Lancer la connexion">
+                                                <input type="submit" name="envoyer" id="envoyer" value="Lancer la simulation">
                                             </div>
                                         </div>
                                     </div>
