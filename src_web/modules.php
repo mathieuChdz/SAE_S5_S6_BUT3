@@ -39,63 +39,56 @@
                 </div>
 
                 <div class="main-items-container">
-                    <div class="main-items">
-                        <div class="main-items-item" id="1">
-                            <div class="item-main">
-                                <div class="item-main-title">
-                                    <h3>Monte Carlo</h3>
-                                </div>
-                                <div class="item-main-texte">
-                                    <p>Ce module permet de calculer, à l'aide de la méthode de Monte Carlo, le nombre Pi. L'objectif ici est l'optimisation du temps d'execution
-                                        par la répartition de cette même execution sur différentes machines.
-                                    </p>
-                                </div>
-                                <div class="item-main-link">
-                                    <a href="module_monte_carlo.php">En savoir plus -></a>
-                                </div>
-                            </div>
+                    <div class="main-item" id="1">
+                        <div class="item-main-title">
+                            <h3>Trouvez PI</h3>
+                            <p>Méthode de Monte Carlo</p>
                         </div>
-                        <div class="main-items-item" id="2">
-                            <div class="item-main">
-                                <div class="item-main-title">
-                                    <h3>Nombres premier</h3>
-                                </div>
-                                <div class="item-main-texte">
-                                    <p>Ce module de <b>calcul distribué</b> offre la possibilité à l'utilisateur une expérience de calcul distribué en calculant tous les 
-                                    nombres premiers de 2 à N et en constatant la différence de temps d'exécution.</p>
-                                </div>
-                                <div class="item-main-link">
-                                    <a href="module_nombres_premiers.php">En savoir plus -></a>
-                                </div>
-                            </div>
+                        <div class="item-main-texte">
+                            <p>Ce module permet de calculer, à l'aide de la méthode de Monte Carlo, le nombre Pi. L'objectif ici est l'optimisation du temps d'execution par la répartition de cette même execution sur différentes machines.
+                            </p>
                         </div>
-                        <div class="main-items-item" id="3">
-                            <div class="item-main">
-                                <div class="item-main-title">
-                                    <h3>Module 3</h3>
-                                </div>
-                                <div class="item-main-texte">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="item-main-link">
-                                    <a href="#">En savoir plus -></a>
-                                </div>
-                            </div>
+                        <div class="item-main-link">
+                            <a href="module_monte_carlo.php">En savoir plus -></a>
                         </div>
-                        <div class="main-items-item" id="4">
-                            <div class="item-main">
-                                <div class="item-main-title">
-                                    <h3>Module 4</h3>
-                                </div>
-                                <div class="item-main-texte">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="item-main-link">
-                                    <a href="#">En savoir plus -></a>
-                                </div>
-                            </div>
+                    </div>
+
+                    <div class="main-item" id="2">
+                        <div class="item-main-title">
+                            <h3>C'est qui le premier ?</h3>
+                            <p>Nombres premier</p>
+                        </div>
+                        <div class="item-main-texte">
+                            <p>Ce module de calcul distribué offre la possibilité à l'utilisateur une expérience de calcul distribué en calculant tous les nombres premiers de 2 à N et en constatant la différence de temps d'exécution.</p>
+                        </div>
+                        <div class="item-main-link">
+                            <a href="module_nombres_premiers.php">En savoir plus -></a>
+                        </div>
+                    </div>
+
+                    <div class="main-item" id="3">
+                        <div class="item-main-title">
+                            <h3>Module 3</h3>
+                            <p>Module 3</p>
+                        </div>
+                        <div class="item-main-texte">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="item-main-link">
+                            <a href="#">En savoir plus -></a>
+                        </div>
+                    </div>
+
+                    <div class="main-item" id="4">
+                        <div class="item-main-title">
+                            <h3>Module 4</h3>
+                            <p>Module 4</p>
+                        </div>
+                        <div class="item-main-texte">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="item-main-link">
+                            <a href="#">En savoir plus -></a>
                         </div>
                     </div>
                 </div>
