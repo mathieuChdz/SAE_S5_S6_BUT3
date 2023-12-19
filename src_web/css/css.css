@@ -40,7 +40,7 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
+    /*list-style: none;*/
     text-decoration: none;
     outline-offset: 0px;
     scroll-behavior: smooth;

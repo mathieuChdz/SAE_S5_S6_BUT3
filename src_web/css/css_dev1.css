@@ -28,6 +28,10 @@
 
 }
 
+ul li{
+    color: var(--color-grey-light);
+}
+
 /* ########################### Module page ########################### */
 
 
@@ -371,3 +375,125 @@
     font-style: italic;
     font-size: 0.9em;
   }
+
+/* ########################### A propos page ########################### */
+
+.explication-sae-container{
+    color: var(--color-white);
+}
+
+.explication-sae-intro,
+.explication-sea-archi,
+.explication-sea-team{
+    padding-top: 7em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.explication-sae-intro{
+    width: 70%;
+}
+
+.explication-sae-container p{
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.6em;
+}
+
+.explication-sae-container ul{
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.explication-sea-archi{
+    text-align: end;
+}
+
+.explication-sea-archi .archi-img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.explication-sea-archi .archi-img img{
+    width: 45em;
+}
+
+.explication-sea-archi .archi-img p{
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.sae-team-items{
+    padding-top: 5em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1em;
+}
+
+.sae-team-item#un{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-items: center;
+}
+
+.sae-team-item#two{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    align-items: center;
+    padding-top: 30em;
+}
+
+.sae-team-item#tree{
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+}
+
+.sae-team-item#four{
+    grid-column: 2 / 3;
+    grid-row: 5 / 7;
+}
+
+.sae-team-item#five{
+    grid-column: 1 / 2;
+    grid-row: 7 / 9;
+}
+
+.sae-team-item#tree,
+.sae-team-item#four,
+.sae-team-item#five{
+    align-items: center;
+    margin-top: -7em;
+}
+
+
+.sae-team-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.team-item-main{
+    padding: 0 2em;
+}
+
+.sae-team-item p{
+    font-size: 0.9em;
+}
+
+.team-item-img{
+    width: 15em;
+    height: 20em;
+    background-color: var(--color-grey-medium);
+    border-radius: 0.5em;
+}
