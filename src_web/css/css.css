@@ -51,7 +51,7 @@
 }
 
 
-/* ########################### Sections ########################### */
+/* ########################## Sections ######################### */
 
 html {
     background-color: var(--color-black);
@@ -95,7 +95,7 @@ footer {
 }
 
 
-/* ########################### Textes ########################### */
+/* ########################### Textes ########################## */
 
 h1, h2, h3, h4 {
     
@@ -126,7 +126,7 @@ p, a {
 }
 
 
-/* ########################### Background ########################### */
+/* ######################### Background ######################## */
 
 .container-background{
     width: 100%;
@@ -165,7 +165,8 @@ p, a {
     transform: translateX(-15%) translateY(90%);
 }
 
-/* ########################### Navbar ########################### */
+
+/* ########################## Navbar ########################### */
 
 .global-navbar-content{
     display: flex;
@@ -205,22 +206,24 @@ p, a {
 
 .global-navbar-links-connexion{
     background-color: var(--color-green-primary);
-    padding: 7px 25px;
+    padding: 10px 20px;
     border-radius: 50px;
 }
-.global-navbar-links-connexion:hover > a{
-    text-shadow: none;
+.global-navbar-links-connexion:hover {
+    cursor: pointer;
+    text-shadow: none!important;
+    background-color: var(--color-green-secondary-hover);
 }
 
 
-/* ########################### Footer ########################### */
+/* ########################### Footer ########################## */
 
 .footer-content{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 var(--margin-all);
+    padding: 0 var(--margin-all);
     max-width: var(--max-width-all);
     padding-top: var(--margin-all);
 }
@@ -330,7 +333,7 @@ p, a {
 }
 
 
-/* ########################### Modules page ########################### */
+/* ######################## Modules page ####################### */
 
 .main-explication{
     color: var(--color-white);
@@ -384,7 +387,7 @@ p, a {
 }
 
 
-/* ########################### Connexion page ########################### */
+/* ####################### Connexion page ###################### */
 
 .main-form-container{
     width: 100%;
@@ -491,7 +494,12 @@ p, a {
 }
 
 
-/* ########################### Module Monte Carlo page ########################### */
+/* ######################### Page Admin ######################## */
+
+
+
+
+/* ################## Module Monte Carlo page ################## */
 
 .explication-monte-carlo-container,
 .simulation-monte-carlo-container{
