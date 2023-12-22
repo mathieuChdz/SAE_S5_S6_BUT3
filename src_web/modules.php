@@ -55,7 +55,7 @@
 
                     <div class="main-item" id="2">
                         <div class="item-main-title">
-                            <h3>C'est qui le premier ?</h3>
+                            <h3>C'est qui les premiers ?</h3>
                             <p>Nombres premier</p>
                         </div>
                         <div class="item-main-texte">
