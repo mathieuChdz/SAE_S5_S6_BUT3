@@ -78,7 +78,7 @@
                             <h2>Calcul des nombres premiers</h2>
                         </div>
                         <div class="simulation-form-container">
-                                <form action="?" method="post">
+                                <form action="php/traitement_nombres_premiers.php" method="post">
                                     <div class="main-form">
                                         <div class="form-container-title">
                                             <h2>Paramètres</h2>
@@ -86,7 +86,7 @@
                                         <div class="form-inputs">
                                             <div class="form-number">
                                                 <label for="number">N</label>
-                                                <input type="number" name="number" id="number" placeholder="nombre">
+                                                <input type="number" name="number" id="number" placeholder="nombre" required>
                                             </div>
                                             <div class="form-submit">
                                                 <input type="submit" name="envoyer" id="envoyer" value="Lancer la simulation">

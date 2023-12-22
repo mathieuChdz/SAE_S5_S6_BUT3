@@ -55,5 +55,7 @@ window.onload = function () {
           popup_div_list[0].style.display = "block";
         }
       }
+
+    
 }
 
