@@ -8,13 +8,13 @@ def is_premier(n):
     et False sinon
     """
     if n <= 0 : 
-        return None
+        return False
     if n==1 :
         return False
     if n==2 or n==3 : 
         return True
     div = 2
-    while(div < n // 2) :
+    while(div <= n // 2) :
         if (n % div) == 0 : 
             return False
         div += 1
@@ -28,7 +28,7 @@ def nb_premiers(start,n,cluster_size):
     """
     premiers = []
     if n<=0 :
-        return None
+        return []
     for candidate_number in range(start,n,cluster_size*2) :
         if is_premier(candidate_number) :
             premiers.append(candidate_number)
@@ -53,13 +53,14 @@ results = comm.gather(primes, root=0)
 if my_rank == 0:
     # How long did it take?
     end = round(time.time() - start, 2)
-    print("Find all primes up to: " + str(end_number))
-    print("Nodes: " + str(cluster_size))
-    print("Time elasped: " + str(end) + " seconds")
+    # print("Find all primes up to: " + str(end_number))
+    # print("Nodes: " + str(cluster_size))
+    # print("Time elasped: " + str(end) + " seconds")
     # Each process returned an array, so lets merge them
     merged_primes = [item for sublist in results for item in sublist]
-    merged_primes.append(2)
+    if end_number >= 2:
+        merged_primes.append(2)
     merged_primes.sort()
-    print("Primes discovered: " + str(len(merged_primes)))
+    # print("Primes discovered: " + str(len(merged_primes)))
     # Uncomment the next line to see all the prime numbers
-    # print(merged_primes)
+    print(merged_primes)
