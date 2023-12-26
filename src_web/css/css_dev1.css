@@ -224,6 +224,31 @@ ul li{
     font-size: 0.9em;
   }
 
+.simulation-np-res-container{
+  padding-top: 3em;
+}
+
+.simulation-np-res-main table{
+  width: 100%;
+  border-spacing: 5px;
+}
+
+.simulation-np-res-main table th,
+.simulation-np-res-main table td{
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.simulation-np-res-main table th{
+  background-color: var(--color-green-primary);
+}
+
+.simulation-np-res-main table td{
+  background-color: var(--color-green-secondary);
+}
+
+
 /* ########################### A propos page ########################### */
 
 .explication-sae-container{

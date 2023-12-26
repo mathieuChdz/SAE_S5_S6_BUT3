@@ -96,6 +96,35 @@
                                 </form>
                             </div>
                     </div>
+                    <div class="simulation-np-res-container">
+                        <div class="simulation-np-res-main">
+                            <?php
+                            if (isset($_GET["res"])){
+                                /*echo "<p id='res'>".$_GET["res"]."</p>";*/
+                                $res_json = json_decode($_GET["res"], true);
+                                echo "<table>";
+                                echo "<tr>";
+                                    echo "<th colspan='5'>Nombres premiers de 2 à ".$_GET["N"]."</th>";
+                                echo "</tr>";
+                                $cpt=0;
+                                foreach ($res_json as $value) {
+                                    if ($cpt%5 == 0){
+                                        echo "<tr>";
+                                            echo "<td>".$value."</td>";
+                                    }
+                                    elseif ($cpt+1%5 == 0){
+                                        echo "</tr>";
+                                    }
+                                    else{
+                                        echo "<td>".$value."</td>";
+                                    }
+                                    $cpt++;
+                                }
+                            echo "</table>";
+                            }
+                            ?>
+                        </div>
+                    </div>
                 </div>
             </div>
 
