@@ -102,9 +102,11 @@
                             if (isset($_GET["res"])){
                                 /*echo "<p id='res'>".$_GET["res"]."</p>";*/
                                 $res_json = json_decode($_GET["res"], true);
+                                $lenght = count($res_json);
+                                $pourcentage = (100*$lenght)/($_GET["N"]-1);
                                 echo "<table>";
                                 echo "<tr>";
-                                    echo "<th colspan='5'>Nombres premiers de 2 à ".$_GET["N"]."</th>";
+                                    echo "<th colspan='5'>Nombres premiers de 2 à ".$_GET["N"]." : ".$lenght." | ".$pourcentage."%</th>";
                                 echo "</tr>";
                                 $cpt=0;
                                 foreach ($res_json as $value) {
