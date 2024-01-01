@@ -35,8 +35,23 @@ ul li{
 /* ########################### Module page ########################### */
 
 
+/* ########################### Module Monte Carlo page ########################### */
 
+@media only screen and (max-width: 815px){
+  .explication-monte-carlo-container .explication-main{
+      display: flex;
+      flex-direction: column;
+      padding: 0 5%;
+  }
 
+  .explication-monte-carlo-container .explication-main .main-graphique{
+    padding-left: 0;
+  }
+
+  .explication-monte-carlo-container .explication-main .main-graphique p{
+    padding: 0;
+  }
+}
 
 /* ########################### Module nombres premiers page ########################### */
 

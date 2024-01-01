@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -99,22 +102,22 @@
                     <div class="simulation-np-res-container">
                         <div class="simulation-np-res-main">
                             <?php
-                            if (isset($_GET["res"])){
-                                /*echo "<p id='res'>".$_GET["res"]."</p>";*/
-                                $res_json = json_decode($_GET["res"], true);
+                            if (isset($_SESSION['resultat'])){
+
+                                $res_json = json_decode($_SESSION['resultat'], true);
                                 $lenght = count($res_json);
                                 $pourcentage = (100*$lenght)/($_GET["N"]-1);
                                 echo "<table>";
                                 echo "<tr>";
-                                    echo "<th colspan='5'>Nombres premiers de 2 à ".$_GET["N"]." : ".$lenght." | ".$pourcentage."%</th>";
+                                    echo "<th colspan='10'>Nombres premiers de 2 à ".$_GET["N"]." : ".$lenght." | ".$pourcentage."%</th>";
                                 echo "</tr>";
                                 $cpt=0;
                                 foreach ($res_json as $value) {
-                                    if ($cpt%5 == 0){
+                                    if ($cpt%10 == 0){
                                         echo "<tr>";
                                             echo "<td>".$value."</td>";
                                     }
-                                    elseif ($cpt+1%5 == 0){
+                                    elseif ($cpt+1%10 == 0){
                                         echo "</tr>";
                                     }
                                     else{
