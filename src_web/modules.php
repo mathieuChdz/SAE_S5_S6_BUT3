@@ -68,11 +68,11 @@
 
                     <div class="main-item" id="3">
                         <div class="item-main-title">
-                            <h3>Module 3</h3>
-                            <p>Module 3</p>
+                            <h3>Positif ou négatif</h3>
+                            <p>Web scraping</p>
                         </div>
                         <div class="item-main-texte">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Ce module permet à l'utilisateur de savoir si une vidéo a été appréciée ou non. L'objectif ici est de regarder plusieurs commentaires d'une vidéo (anglaise) donnée et de retourné le pourcentage de commentaires positif et négatif.</p>
                         </div>
                         <div class="item-main-link">
                             <a href="#">En savoir plus -></a>
@@ -81,14 +81,14 @@
 
                     <div class="main-item" id="4">
                         <div class="item-main-title">
-                            <h3>Module 4</h3>
-                            <p>Module 4</p>
+                            <h3>Chiffrer un message</h3>
+                            <p>Cryptographie</p>
                         </div>
                         <div class="item-main-texte">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                         <div class="item-main-link">
-                            <a href="#">En savoir plus -></a>
+                            <a href="module_chiffrement.php">En savoir plus -></a>
                         </div>
                     </div>
                 </div>
