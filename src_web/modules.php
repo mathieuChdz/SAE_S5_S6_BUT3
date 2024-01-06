@@ -91,6 +91,19 @@
                             <a href="module_chiffrement.php">En savoir plus -></a>
                         </div>
                     </div>
+
+                    <div class="main-item" id="5">
+                        <div class="item-main-title">
+                            <h3>Calcul d'intégrales</h3>
+                            <p>Probabilité</p>
+                        </div>
+                        <div class="item-main-texte">
+                            <p>Ce module permet à l'utilisateur de calculer une intégrale. Ce dernier peut choisir entre trois méthodes de calcul (méthode des rectangles médians, méthode des trapèzes, méthode de Simpson).</p>
+                        </div>
+                        <div class="item-main-link">
+                            <a href="module_proba.php">En savoir plus -></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

@@ -67,7 +67,7 @@ session_start();
                                      
                                     <br>
                                     <h2>Architecture</h2>
-                                    <p>Les différents calculs utilisant la prommation distribué auront une l'architecture suivante :</p>
+                                    <p>Les différents calculs utilisant la programmation distribué auront une l'architecture suivante :</p>
                                     <div class="archi-img">
                                         <img src="img/schema_archi_rpi.png" alt="schéma architecture rpi"/>
                                         <p>Figure : architecture Rpi 4 B Cluster Hat</p>

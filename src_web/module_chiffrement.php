@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>LTM | nombres premiers</title>
+        <title>LTM | chiffrement</title>
         <link href="img/logo_ltm_w_mini.svg" rel="icon">
 
         <?php 
@@ -76,7 +76,8 @@
                                             <div class="simulation-chiffrement-res-main">
                                                 <?php
                                                 if (isset($_GET["res"])){
-                                                    echo "<h2>Message chiffrer</h2>";
+                                                    echo "<hr></hr>";
+                                                    echo "<h2>Résultat</h2>";
                                                     echo "<div class='res-p-span'>";
                                                     echo "<p id='res-copy'>".$_GET["res"]."</p> <span class='material-symbols-outlined' data-target='#res-copy'>content_copy</span>";
                                                     echo "</div>";
