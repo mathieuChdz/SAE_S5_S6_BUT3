@@ -36,11 +36,9 @@
                         </div>
 
                         <div class="proba-explication-main">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            <p>Le module de proba permet de chiffrer et déchiffrer des mots entrés par un utilisateur en utilisant le proba RC4.
+                                 Pour ce faire, le module fonctionne notamment grâce à deux fonctions python principales qui suivent les principes du proba RC4, une fonction qui sert à chiffrer un mot
+                                 entré et une autre qui sert à déchiffrer un mot entré.
                             </p>
                             <p>Le module de proba a été développé en python</p>
                         </div>    

@@ -447,10 +447,10 @@ p, a {
     border: solid 1px var(--color-white);
 }
 
-.form-email ::placeholder,
+/*.form-email ::placeholder,
 .form-password ::placeholder{
     color: var(--color-white);
-}
+}*/
 
 .main-form-container form{
     width: 100%;

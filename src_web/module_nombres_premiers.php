@@ -102,7 +102,7 @@ session_start();
                     <div class="simulation-np-res-container">
                         <div class="simulation-np-res-main">
                             <?php
-                            if (isset($_SESSION['resultat'])){
+                            if (isset($_GET["N"])){
 
                                 $file = "php/resultat.txt";
                                 $data = file($file);

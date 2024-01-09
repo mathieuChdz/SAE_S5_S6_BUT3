@@ -90,17 +90,9 @@
                                             <h2>Paramètres</h2>
                                         </div>
                                         <div class="form-inputs">
-                                            <div class="form-moyenne">
-                                                <label for="moyenne">Moyenne</label>
-                                                <input type="text" name="moyenne" id="moyenne" placeholder="moyenne">
-                                            </div>
-                                            <div class="form-sigma">
-                                                <label for="sigma">σ</label>
-                                                <input type="text" name="sigma" id="sigma" placeholder="σ">
-                                            </div>
-                                            <div class="form-T1">
-                                                <label for="T1">T1</label>
-                                                <input type="text" name="T1" id="T1" placeholder="T1">
+                                            <div class="form-iterations">
+                                                <label for="iterations">N</label>
+                                                <input type="number" name="iterations" id="iterations" placeholder="iterations">
                                             </div>
                                             <div class="form-submit">
                                                 <input type="submit" name="envoyer" id="envoyer" value="Lancer la simulation">
