@@ -104,6 +104,19 @@
                             <a href="module_proba.php">En savoir plus -></a>
                         </div>
                     </div>
+
+                    <div class="main-item" id="5">
+                        <div class="item-main-title">
+                            <h3>Calcul d'intégrales</h3>
+                            <p>Méthode de Monte Carlo</p>
+                        </div>
+                        <div class="item-main-texte">
+                            <p>Ce module permet à l'utilisateur de calculer une intégrale à l'aide de la méthode de Monte Carlo. A COMPLETER</p>
+                        </div>
+                        <div class="item-main-link">
+                            <a href="module_proba_monte_carlo.php">En savoir plus -></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

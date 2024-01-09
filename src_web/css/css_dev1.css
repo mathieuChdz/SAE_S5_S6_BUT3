@@ -32,10 +32,59 @@ ul li{
     color: var(--color-grey-light);
 }
 
+/* ########################### connexion page ########################### */
+
+/* ########################### A propos page ########################### */
+
+.main-explication p,
+.explication-sae-container p{
+  text-align: justify;
+}
+
 /* ########################### Module page ########################### */
 
+.explication-main p{
+  text-align: justify;
+}
+
+.explication-main .main-graphique p{
+  text-align: center;
+}
 
 /* ########################### Module Monte Carlo page ########################### */
+
+.main-item p{
+  text-align: justify;
+}
+
+.form-iterations{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  gap: 1em;
+}
+
+.form-iterations{
+  padding-left: 3em;
+}
+
+.form-iterations input[type="number"]{
+  width: 80%;
+  height: 2.5em;
+  border-radius: 1.5em;
+  padding-left: 1em;
+  /* background: linear-gradient(90deg, rgba(10, 91, 0, 0.2) 0%, rgba(17, 167, 34, 0.2) 100%); */
+  background: var(--color-black);
+  border: solid 1px var(--color-white);
+  color: var(--color-white);
+}
+
+.simulation-form-container .form-iterations{
+  text-align: center;
+  width: auto;
+}
 
 @media only screen and (max-width: 815px){
   .explication-monte-carlo-container .explication-main{
@@ -265,6 +314,10 @@ ul li{
 
 
 /* ########################### Module chiffrement page ########################### */
+
+.chiffrement-main-explication p{
+  text-align: justify;
+}
 
 .chiffrement-container{
   color: var(--color-white);
