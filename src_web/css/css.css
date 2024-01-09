@@ -14,9 +14,9 @@
     /* Sizes */
     --font-size-xs: 0.6em;
     --font-size-s: 0.75em;
-    --font-size-m: ;
-    --font-size-l: ;
-    --font-size-xl: ;
+    --font-size-m: 8em;
+    --font-size-l: 1em;
+    --font-size-xl: 2em;
 
     /* Margin */
     --margin-all: 20px;
@@ -125,6 +125,14 @@ p, a {
     font-size: var(--font-size-s);
 }
 
+.display-none{
+    display: none!important;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
 
 /* ######################### Background ######################## */
 
@@ -209,10 +217,24 @@ p, a {
     padding: 10px 20px;
     border-radius: 50px;
 }
+
 .global-navbar-links-connexion:hover {
     cursor: pointer;
     text-shadow: none!important;
     background-color: var(--color-green-secondary-hover);
+}
+
+.responsive-menu{
+    transition: 0.3s;
+}
+
+.nav-resp-menu {
+    height: 35px;
+    display: none;
+}
+
+.nav-links-responsive {
+
 }
 
 
@@ -703,6 +725,16 @@ p, a {
     font-size: 0.9em;
 }
 
+.sae-team-items{
+    padding-top: 5em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1em;
+}
+
 .sae-team-item#un{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -761,6 +793,9 @@ p, a {
     border-radius: 0.5em;
 }
 
+
+/* ----------------------------- RESPONSIVE --------------------------------- */
+
 /* Extra large devices (large laptops and desktops, 1200px and down) */
 @media only screen and (max-width: 1200px) {
 
@@ -797,6 +832,53 @@ p, a {
 
     .explication-sae-container ul {
         padding: 0;
+    }
+
+    /* Navbar */
+
+    .global-navbar-content {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-resp-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .global-navbar-links {
+        flex-direction: column;
+    }
+
+    .nav-links-responsive {
+        color: var(--color-white);
+    }
+
+    .global-navbar-links-connexion{
+
+    }
+
+    .responsive-menu {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        top: 80px;
+        left: 0px;
+        backdrop-filter: blur(20px);
+        height: 100vh;
+        gap: 50px;
+        padding: 50px 20px;
+    }
+
+    .responsive-menu > a{
+        font-size: var(--font-size-l);
     }
 }
 
