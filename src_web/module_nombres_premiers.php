@@ -104,12 +104,18 @@ session_start();
                             <?php
                             if (isset($_SESSION['resultat'])){
 
-                                $res_json = json_decode($_SESSION['resultat'], true);
+                                $file = "php/resultat.txt";
+                                $data = file($file);
+                                $line = $data[count($data)-1];
+                                //echo $line;
+
+                                $res_json = json_decode($line, true);
                                 $lenght = count($res_json);
                                 $pourcentage = (100*$lenght)/($_GET["N"]-1);
+
                                 echo "<table>";
                                 echo "<tr>";
-                                    echo "<th colspan='10'>Nombres premiers de 2 à ".$_GET["N"]." : ".$lenght." | ".$pourcentage."%</th>";
+                                    echo "<th colspan='10'>Nombres premiers de 2 à ".$_GET["N"]." : ".$lenght." | ".round($pourcentage,2)."%</th>";
                                 echo "</tr>";
                                 $cpt=0;
                                 foreach ($res_json as $value) {
