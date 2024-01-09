@@ -839,6 +839,8 @@ p, a {
     .global-navbar-content {
         width: 100%;
         justify-content: space-between;
+        display: flex;
+        align-items: center;
     }
 
     .nav-links {
