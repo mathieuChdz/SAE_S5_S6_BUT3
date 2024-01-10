@@ -75,6 +75,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <?php include("imports/popup_calcul_distribue.html"); ?>
                 </div>
 
                 <div class="simulation-monte-carlo-container">

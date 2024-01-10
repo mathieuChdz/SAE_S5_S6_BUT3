@@ -42,6 +42,7 @@
                                 <li>Web scrapping sur le taux de safisfaction d'une video youtube (selon ses commentaires)</li>
                                 <li>Chiffrement de mot de passe</li>
                                 <li>Simulation de probalités</li>
+                                <li>Simulation de probalités avec la méthode de Monte Carlo (Calcul distribué)</li>
                             </ul>
                         </div>
                     </div>
