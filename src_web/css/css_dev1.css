@@ -71,6 +71,21 @@ ul li{
   width: auto;
 }
 
+.simulation-monteCarloPi-res-main hr{
+  width: 90%;
+  height: 1px;
+  background-color: var(--color-grey-light);
+}
+
+.simulation-monteCarloPi-res-main h2{
+  text-align: center;
+}
+
+.simulation-monteCarloPi-res-main p{
+  font-size: 1.2em;
+  text-align: center;
+}
+
 @media only screen and (max-width: 815px){
   .explication-monte-carlo-container .explication-main{
       display: flex;

@@ -84,7 +84,7 @@
                     <div class="simulation-main">
                         <div class="simulation-main-container">
                             <div class="simulation-form-container">
-                                <form action="?" method="post">
+                                <form action="php/traitement_pi.php" method="post">
                                     <div class="main-form">
                                         <div class="form-container-title">
                                             <h2>Paramètres</h2>
@@ -92,10 +92,30 @@
                                         <div class="form-inputs">
                                             <div class="form-iterations">
                                                 <label for="iterations">N</label>
-                                                <input type="number" name="iterations" id="iterations" placeholder="iterations">
+                                                <input type="number" name="iterations" id="iterations" placeholder="iterations" required>
                                             </div>
                                             <div class="form-submit">
                                                 <input type="submit" name="envoyer" id="envoyer" value="Lancer la simulation">
+                                            </div>
+                                        </div>
+                                        <div class="simulation-monteCarloPi-res-container">
+                                            <div class="simulation-monteCarloPi-res-main">
+                                                <?php
+                                                if (isset($_GET["N"])){
+
+                                                    $file = "php/resultat.txt";
+                                                    $data = file($file);
+                                                    $line = $data[count($data)-1];
+                                                    //echo $line;
+
+                                                    echo "<hr></hr>";
+                                                    echo "<h2>Résultat</h2>";
+                                                    
+                                                    echo "<p>Nombre d'itérations : ".$_GET["N"]."</p>";
+
+                                                    echo "<p id='res'><b>".round($line,8)."</b></p>";
+                                                }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>

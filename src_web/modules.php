@@ -45,7 +45,7 @@
                             <p>Méthode de Monte Carlo</p>
                         </div>
                         <div class="item-main-texte">
-                            <p>Ce module permet de calculer, à l'aide de la méthode de Monte Carlo, le nombre Pi. L'objectif ici est l'optimisation du temps d'execution par la répartition de cette même execution sur différentes machines.
+                            <p>Ce module de calcul distribué permet de calculer, à l'aide de la méthode de Monte Carlo, le nombre Pi. L'objectif ici est l'optimisation du temps d'execution par la répartition de cette même execution sur différentes machines.
                             </p>
                         </div>
                         <div class="item-main-link">
@@ -111,7 +111,7 @@
                             <p>Méthode de Monte Carlo</p>
                         </div>
                         <div class="item-main-texte">
-                            <p>Ce module permet à l'utilisateur de calculer une intégrale à l'aide de la méthode de Monte Carlo. A COMPLETER</p>
+                            <p>Ce module de calcul distribué permet à l'utilisateur de calculer une intégrale à l'aide de la méthode de Monte Carlo. A COMPLETER</p>
                         </div>
                         <div class="item-main-link">
                             <a href="module_proba_monte_carlo.php">En savoir plus -></a>

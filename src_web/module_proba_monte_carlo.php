@@ -49,27 +49,12 @@
                             <h2>Calcul d'une intégrale</h2>
                         </div>
                         <div class="simulation-form-container">
-                                <form action="php/traitement_proba.php" method="post">
+                                <form action="php/traitement_monte_carlo_proba.php" method="post">
                                     <div class="main-form">
                                         <div class="form-container-title">
                                             <h2>Paramètres</h2>
                                         </div>
-                                        <h3>Méthode choisie</h3>
                                         <div class="form-inputs">
-                                            <div  class="form-choix">
-                                                <div class="form-radio-item">
-                                                    <input type="radio" id="methode1" name="choix" value="r_m" required>
-                                                    <label for="methode1">Rectangles médians</label>
-                                                </div>
-                                                <div class="form-radio-item">
-                                                    <input type="radio" id="methode2" name="choix" value="trapezes" required>
-                                                    <label for="methode2">Trapèzes</label>
-                                                </div>
-                                                <div class="form-radio-item">
-                                                    <input type="radio" id="methode3" name="choix" value="simpson" required>
-                                                    <label for="methode3">Simpson</label>
-                                                </div>
-                                            </div>
                                             <div class="form-m">
                                                 <label for="m">M</label>
                                                 <input type="number" id="m" name="m" placeholder="valeur de m" required="required">
@@ -89,22 +74,16 @@
                                         <div class="simulation-proba-res-container">
                                             <div class="simulation-proba-res-main">
                                                 <?php
-                                                if (isset($_GET["res"], $_GET["methode"])){
+                                                if (isset($_GET["res"])){
+
+                                                    $file = "php/resultat.txt";
+                                                    $data = file($file);
+                                                    $line = $data[count($data)-1];
+
                                                     echo "<hr></hr>";
                                                     echo "<h2>Résultat</h2>";
-                                                    if ($_GET["methode"] == 1){
-                                                        echo "<h3>Méthodes des rectangles médians</h3>";
-                                                    }
-
-                                                    else if($_GET["methode"] == 2){
-                                                        echo "<h3>Méthodes des trapèzes</h3>";
-                                                    }
-
-                                                    else if($_GET["methode"] == 3){
-                                                        echo "<h3>Méthodes de Simpson</h3>";
-                                                    }
-
-                                                    echo "<p id='res'>".$_GET["res"]."</p>";
+                                                    echo "<h3>Méthodes de Monte Carlo</h3>";
+                                                    echo "<p id='res'>".round($line,6)."</p>";
                                                 }
                                                 ?>
                                             </div>
