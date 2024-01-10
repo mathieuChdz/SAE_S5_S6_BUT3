@@ -15,7 +15,7 @@
         </header>
 
         <?php 
-            include("imports/navbar.html");
+            include("imports/navbar.php");
         ?>
         
         <main>
@@ -28,11 +28,30 @@
 
             <div class="main-container">
                 <div class="main-form-container">
-                    <form action="?" method="post">
+                    <form action="process_forms/process_connexion.php" method="post">
                         <div class="main-form">
                             <div class="form-container-title">
                                 <h2>Connexion</h2>
                             </div>
+                            <?php 
+                            //On verifie si lors du chargment de la page, une erreur à été envoyé.
+                            if(isset($_GET['err'])){
+                                //Si oui on cherche à quelle erreur elle correspond pour l'afficher.
+                                switch($_GET['err']){
+
+                                    case "u_ou_mdp_faux" :
+                                    echo "<p class='err'>Erreur : Utilisateur ou mot de passe erroné.</p>";
+                                    break;
+
+                                    case "mdp_vide" :
+                                    echo "<p class='err'>Erreur : Mot de passe vide.</p>";
+                                    break;
+
+                                    case "login_vide" :
+                                    echo "<p class='err'>Erreur : Identifiant vide.</p>";
+                                    break;
+                                }
+                            } ?>
                             <div class="form-inputs">
                                 <div class="form-email">
                                     <label for="email">Email</label>
@@ -46,7 +65,7 @@
                                     <input type="submit" name="envoyer" id="envoyer" value="Se connecter">
                                     <div class="form-inscription">
                                         <p>Vous n’avez pas de compte ?</p>
-                                        <a href="#">Cliquez Ici !</a>
+                                        <a href="inscription.php">Cliquez Ici !</a>
                                     </div>
                                 </div>
                             </div>

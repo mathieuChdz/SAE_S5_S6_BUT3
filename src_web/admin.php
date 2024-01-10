@@ -1,3 +1,23 @@
+<?php
+//mettre un message quand la recherche d'user ne renvoie r
+
+    //On démarre une cession existe.
+    session_start();
+    //On vérifie si une cession existe.
+    if(isset($_SESSION['user'])) {
+        //Si c'est un simple utilisateur, on renvois sur la page de connexion.
+        if($_SESSION['user']['type_user'] == 'user'){
+            header('Location: index.php');
+            die();
+        }
+    //Si aucune cession n'existe on renvoie sur la page de connexion.
+    }else{
+        header('Location: connexion.php');
+        die();
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -15,7 +35,7 @@
         </header>
 
         <?php 
-        include("imports/navbar.html");
+        include("imports/navbar.php");
         ?>
 
         <main>

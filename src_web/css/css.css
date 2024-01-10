@@ -467,6 +467,7 @@ p, a {
     /* background: linear-gradient(90deg, rgba(10, 91, 0, 0.2) 0%, rgba(17, 167, 34, 0.2) 100%); */
     background: var(--color-black);
     border: solid 1px var(--color-white);
+    color: var(--color-white);
 }
 
 /*.form-email ::placeholder,

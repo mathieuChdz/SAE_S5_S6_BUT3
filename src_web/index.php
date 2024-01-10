@@ -15,7 +15,7 @@
         </header>
 
         <?php 
-        include("imports/navbar.html");
+        include("imports/navbar.php");
         ?>
 
         <main>
@@ -33,11 +33,11 @@
 
                     <div class="pres-index-links">
                         <div class="pres-index-discover-link-container">
-                            <a class="pres-index-discover-link" href="#">Découvrir comment !</a>
+                            <a class="pres-index-discover-link" href="modules.php">Découvrir comment !</a>
                         </div>
 
                         <div class="pres-index-about-link-container">
-                            <a class="pres-index-about-link" href="#">A propos</a>
+                            <a class="pres-index-about-link" href="apropos.php">A propos</a>
                         </div>
                     </div>
                 </div>

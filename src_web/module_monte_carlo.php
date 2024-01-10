@@ -20,7 +20,7 @@
         </header>
 
         <?php 
-            include("imports/navbar.html");
+            include("imports/navbar.php");
         ?>
         
         <main>
