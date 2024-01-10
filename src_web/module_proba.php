@@ -36,12 +36,14 @@
                         </div>
 
                         <div class="proba-explication-main">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            <p>Ce module à pour objectif de calculer une probabilité suivant une <b>loi normale</b>. L’utilisateur pourra choisir la méthode à utilisée (méthode des rectangles médians, méthode des trapèzes, méthode de Simpson) ainsi que les paramètres <b>m</b> (moyenne), <b>σ</b>(écart type) et T. Pour cela, différentes fonctions sont développées :
                             </p>
+                            <ul>
+                                <li><b>loi_normale (m,s,x)</b> : calcul une loi de probabilité avec des paramètres (m,s,x) donnés.</li>
+                                <li><b>rectangle médian (n,a,b,m,s)</b> : calcul une probabilité suivant une loi normale grâce à la méthode des rectangles médian.</li>
+                                <li><b>trapèze (n,a,b,m,s)</b> : calcul une probabilité suivant une loi normale grâce à la méthode des trapèzes.</li>
+                                <li><b>simpson (n,a,b,m,s)</b> : calcul une probabilité suivant une loi normale grâce à la méthode de Simpson.</li>
+                            </ul>
                             <p>Le module de proba a été développé en python</p>
                         </div>    
                     </div>

@@ -1,4 +1,4 @@
-Simulations de Monte Carlo terminées.
+Simulation de Monte Carlo pour estimer Pi terminée.
 Nœuds : 1
-Temps écoulé : 0.0 secondes
-0.8412333333333334
+Temps écoulé : 1.65 secondes
+3.14158495

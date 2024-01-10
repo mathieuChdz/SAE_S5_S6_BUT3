@@ -32,9 +32,8 @@
                         <h2>Modules disponibles</h2>
                     </div>
                     <div class="main-explication-texte">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                        <p>Les différents modules présents sur la page ont été réalisés entre début 2023 et début 2024 durant nos notre deuxième et troisème année de BUT Informatique. A COMPLETER
+                        </p>
                     </div>
                 </div>
 
@@ -42,7 +41,7 @@
                     <div class="main-item" id="1">
                         <div class="item-main-title">
                             <h3>Trouvez PI</h3>
-                            <p>Méthode de Monte Carlo</p>
+                            <p>Méthode de Monte Carlo (calcul distribué)</p>
                         </div>
                         <div class="item-main-texte">
                             <p>Ce module de calcul distribué permet de calculer, à l'aide de la méthode de Monte Carlo, le nombre Pi. L'objectif ici est l'optimisation du temps d'execution par la répartition de cette même execution sur différentes machines.
@@ -56,7 +55,7 @@
                     <div class="main-item" id="2">
                         <div class="item-main-title">
                             <h3>C'est qui les premiers ?</h3>
-                            <p>Nombres premier</p>
+                            <p>Nombres premier (calcul distribué)</p>
                         </div>
                         <div class="item-main-texte">
                             <p>Ce module de calcul distribué offre la possibilité à l'utilisateur une expérience de calcul distribué en calculant tous les nombres premiers de 2 à N et en constatant la différence de temps d'exécution.</p>
@@ -85,7 +84,7 @@
                             <p>Cryptographie</p>
                         </div>
                         <div class="item-main-texte">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Ce module donne l'occasion à l'utilisateur de chiffrer et déchiffrer un message avec sa propre clé. Le chiffrement utilise un algorithme de chiffrement RC4, un "algorithme en continu".</p>
                         </div>
                         <div class="item-main-link">
                             <a href="module_chiffrement.php">En savoir plus -></a>
@@ -108,7 +107,7 @@
                     <div class="main-item" id="5">
                         <div class="item-main-title">
                             <h3>Calcul d'intégrales</h3>
-                            <p>Méthode de Monte Carlo</p>
+                            <p>Méthode de Monte Carlo (calcul distribué)</p>
                         </div>
                         <div class="item-main-texte">
                             <p>Ce module de calcul distribué permet à l'utilisateur de calculer une intégrale à l'aide de la méthode de Monte Carlo. A COMPLETER</p>
