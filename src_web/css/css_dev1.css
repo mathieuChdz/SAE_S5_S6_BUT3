@@ -178,6 +178,35 @@ ul li{
   }
 }
 
+/* ########################### navbar ########################### */
+
+.nav-resp-menu{
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 768px){
+
+  .responsive-menu{
+    top: 0px;
+    justify-content: space-evenly;
+  }
+
+  .responsive-menu a:first-of-type,
+  .responsive-menu a:nth-of-type(3),
+  .responsive-menu a:nth-of-type(5){
+    transform: translateX(600%);
+    transition: transform 0s;
+  }
+
+  .responsive-menu a:nth-of-type(2),
+  .responsive-menu a:nth-of-type(4),
+  .responsive-menu a:nth-of-type(6){
+    transform: translateX(-600%);
+    transition: transform 0s;
+  }
+}
+
+
 /* ########################### connexion page ########################### */
 
 /* ########################### Module page ########################### */
