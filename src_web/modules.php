@@ -76,7 +76,7 @@
                             <p>Ce module permet à l'utilisateur de savoir si une vidéo a été appréciée ou non. L'objectif ici est de regarder plusieurs commentaires d'une vidéo (anglaise) donnée et de retourné le pourcentage de commentaires positif et négatif.</p>
                         </div>
                         <div class="item-main-link">
-                            <a href="#">En savoir plus -></a>
+                            <a href="module_web_scraping.php">En savoir plus -></a>
                         </div>
                     </div>
 
