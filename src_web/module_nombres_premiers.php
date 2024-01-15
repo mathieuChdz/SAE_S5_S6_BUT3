@@ -84,17 +84,28 @@ session_start();
                                 $lenght = count($res_json);
                                 $pourcentage = (100*$lenght)/($_GET["N"]-1);
 
+                                function isMobile() {
+                                    $userAgent = $_SERVER['HTTP_USER_AGENT'];
+                                    return preg_match("/(android|avantgo|blackberry|iemobile|nokia|phone|mobile)/i", $userAgent) && !preg_match("/(tablet)/i", $userAgent);
+                                }
+
+                                if (isMobile()) {
+                                    $nb_cells_row = 4;
+                                }else {
+                                    $nb_cells_row = 10;
+                                }
+
                                 echo "<table>";
                                 echo "<tr>";
                                     echo "<th colspan='10'>Nombres premiers de 2 à ".$_GET["N"]." : ".$lenght." | ".round($pourcentage,2)."%</th>";
                                 echo "</tr>";
                                 $cpt=0;
                                 foreach ($res_json as $value) {
-                                    if ($cpt%10 == 0){
+                                    if ($cpt%$nb_cells_row == 0){
                                         echo "<tr>";
                                             echo "<td>".$value."</td>";
                                     }
-                                    elseif ($cpt+1%10 == 0){
+                                    elseif ($cpt+1%$nb_cells_row == 0){
                                         echo "</tr>";
                                     }
                                     else{
