@@ -570,3 +570,38 @@ ul li{
   font-size: 1.2em;
   text-align: center;
 }
+
+/* ########################### Module web scraping page ########################### */
+
+.web-scraping-container .main-explication-titre,
+.web-scraping-container .main-simulation-titre{
+  padding: 3em;
+  text-align: center;
+}
+
+.web-scraping-explication-main p{
+  line-height: 1.6em;
+}
+
+.simulation-form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.web-scraping-main-simulation button{
+  background-color: var(--color-green-primary);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 200;
+  color: var(--color-white);
+  font-size: var(--font-size-s);
+}
+
+.web-scraping-main-simulation button:hover {
+  cursor: pointer;
+  text-shadow: none!important;
+  background-color: var(--color-green-secondary-hover);
+}

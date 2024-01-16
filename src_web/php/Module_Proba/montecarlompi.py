@@ -21,9 +21,9 @@ def monte_carlo_probabilite_normale(moyenne, ecart_type, t1=None, t2=None, nbr_e
 
     return probabilite_estimee
 
-def tester_monte_carlo(local_samples, mean, ecart_type, t):
+def tester_monte_carlo(local_samples, mean, ecart_type, t, t2):
     local_results = []
-    local_result = monte_carlo_probabilite_normale(moyenne=mean, ecart_type=ecart_type, t1=t, nbr_echantillons=len(local_samples))
+    local_result = monte_carlo_probabilite_normale(moyenne=mean, ecart_type=ecart_type, t1=t, t2=t2, nbr_echantillons=len(local_samples))
     local_results.append(local_result)
     return local_results
 
@@ -34,7 +34,14 @@ def main():
 
     m = int(sys.argv[1]) if len(sys.argv) > 1 else 0
     e_t = int(sys.argv[2]) if len(sys.argv) > 1 else 1
-    t1 = int(sys.argv[3]) if len(sys.argv) > 1 else 0
+    t1 = int(sys.argv[3]) if len(sys.argv) > 1 else None
+    t2 = int(sys.argv[4]) if len(sys.argv) > 1 else None
+
+    if t1 == 0:
+        t1 = None
+    if t2 == 0:
+        t2 = None
+        
     nbr_echantillons = 300000
 
     nbr_echant_mpi = nbr_echantillons//cluster_size
@@ -44,7 +51,7 @@ def main():
 
     start=time.time()
     # Chaque nœud exécute son propre calcul
-    local_results = tester_monte_carlo(my_samples, m, e_t, t1)
+    local_results = tester_monte_carlo(my_samples, m, e_t, t1, t2)
 
     # Rassembler les résultats sur le nœud maître
     results = np.array(comm.gather(local_results, root=0))

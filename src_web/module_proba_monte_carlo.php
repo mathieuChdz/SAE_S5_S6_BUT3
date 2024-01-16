@@ -68,8 +68,12 @@
                                                 <input type="number" id="e_t" name="e_t" placeholder="valeur de σ" required="required">
                                             </div>
                                             <div class="form-t">
-                                                <label for="t">T</label>
-                                                <input type="number" id="t" name="t" placeholder="valeur de t" required="required">
+                                                <label for="t1">T1</label>
+                                                <input type="number" id="t1" name="t1" placeholder="valeur de t1">
+                                            </div>
+                                            <div class="form-t">
+                                                <label for="t2">T2</label>
+                                                <input type="number" id="t2" name="t2" placeholder="valeur de t2">
                                             </div>
                                             <div class="form-submit">
                                                 <input type="submit" name="envoyer" id="envoyer" value="Lancer la simulation">

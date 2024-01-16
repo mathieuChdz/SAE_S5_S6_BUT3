@@ -128,4 +128,5 @@ if __name__ == "__main__":
     elif arg_function[0] == "4":
         res = afficher_stats_en()
 
+
     print(res)

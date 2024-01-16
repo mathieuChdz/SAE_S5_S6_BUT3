@@ -36,11 +36,10 @@
                         </div>
 
                         <div class="web-scraping-explication-main">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            <p>Le module de Web scraping est une amélioration de celui qu’on a fait l’année dernière lors de la SAE au S4. 
+                                L’objectif ici est de récupérer les principaux titres d’articles sur un site francophone (<a href="https://www.lemonde.fr/" target="blank">Le Monde</a>) et un site anglophone (<a href="https://www.washingtonpost.com/" target="blank">Washington Post</a>)
+                                et de prédire si les titres des articles sont plutôt des informations négatives ou neutres ou alors positives.
+                                A l’aide des 4 boutons ci-dessous, vous pouvez consulter les titres des articles et leur rapport de positivité.
                             </p>
                             <p>Le module de web scraping a été développé en python</p>
                         </div>

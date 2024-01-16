@@ -3,7 +3,7 @@
 session_start();
 
 if (isset($_POST["send"])){
-    echo $_POST["send"];
+    #echo $_POST["send"];
 
     if ($_POST["send"] == "titre_fr"){
         $res = exec("python3 Module_WebScraping/webscrapingv2_01.py 1");
@@ -20,6 +20,7 @@ if (isset($_POST["send"])){
     else{
 
     }
+
     $_SESSION["output"] = $res;
 
     header("Location: ../module_web_scraping.php?btn=".$_POST["send"]);

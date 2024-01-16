@@ -3,19 +3,32 @@
 session_start();
 
 
-if (isset($_POST['envoyer'], $_POST['e_t'], $_POST['t'], $_POST['m'])){
+if (isset($_POST['envoyer'], $_POST['e_t'], $_POST['m'])){
 
     // vérification que les paramètres ne sont pas nulles
-    if ($_POST['envoyer']!=null and $_POST['e_t']!=null and $_POST['t']!=null and $_POST['m']!=null){
+    if ($_POST['envoyer']!=null and $_POST['e_t']!=null and $_POST['m']!=null){
+
+        if ($_POST['t1']!=null){
+            $arg3 = $_POST['t1'];
+        }
+        else{
+            $arg3 = 0;
+        }
+
+        if ($_POST['t2']!=null){
+            $arg4 = $_POST['t2'];
+        }
+        else{
+            $arg4 = 0;
+        }
+
         $arg1 = $_POST['m'];
         $arg2 = $_POST['e_t'];
-        $arg3 = $_POST['t'];
 
         echo $arg1;
         echo $arg2;
-        echo $arg3;
 
-        $resultat = exec("python3 Module_Proba/montecarlompi.py $arg1 $arg2 $arg3 > resultat.txt 2>&1", $output, $return_var);
+        $resultat = exec("mpiexec -n 4 --host node1,node2,node3,node4 python3 Module_Proba/montecarlompi.py $arg1 $arg2 $arg3 $arg4 > resultat.txt 2>&1", $output, $return_var);
         $_SESSION['resultat'] = $resultat;
         header("Location: ../module_proba_monte_carlo.php?res=true");
 
