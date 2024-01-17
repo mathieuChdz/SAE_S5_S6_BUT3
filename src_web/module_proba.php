@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>LTM | prababilité</title>
+        <title>LTM | probabilité</title>
         <link href="img/logo_ltm_w_mini.svg" rel="icon">
 
         <?php 

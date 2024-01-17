@@ -23,7 +23,7 @@ if (isset($_POST["send"])){
 
     $_SESSION["output"] = $res;
 
-    header("Location: ../module_web_scraping.php?btn=".$_POST["send"]);
+    header("Location: ../module_web_scraping.php?btn=".$_POST["send"]."#resultat");
 
 }
 

@@ -58,35 +58,94 @@
                             <button type="submit" form="web-scraping-form" name="send" value="resultat_en">Résultat des statistiques en anglais</button>
                         </div>
                     </div>
-                </div>
+                    <div class="simulation-web-scraping-res-container" id="resultat">
+                        <div class="simulation-web-scraping-res-main">
+                            <?php
+                            if (isset($_SESSION["output"], $_GET["btn"])){
+                                echo "<hr></hr>";
+                                echo "<h2>Résultat</h2>";
+                                if ($_GET["btn"] == "titre_fr"){
+                                    $table_titre = "Titre des articles en français";
+                                }
 
-                <div class="simulation-web-scraping-res-container">
-                    <div class="simulation-web-scraping-res-main">
-                        <?php
-                        if (isset($_SESSION["output"], $_GET["btn"])){
-                            echo "<hr></hr>";
-                            echo "<h2>Résultat</h2>";
-                            if ($_GET["btn"] == "titre_fr"){
-                                echo "<h3>Titre des articles en français</h3>";
-                            }
+                                else if($_GET["btn"] == "resultat_fr"){
+                                    echo "<h3>Résultat des statistiques de 'positivité' des articles en français</h3>";
+                                }
 
-                            else if($_GET["btn"] == "resultat_fr"){
-                                echo "<h3>Résultat des statistiques de 'positivité' des articles en français</h3>";
-                            }
+                                else if($_GET["btn"] == "titre_en"){
+                                    $table_titre = "Titre des articles en anglais";
+                                }
+                                
+                                else if($_GET["btn"] == "resultat_en"){
+                                    echo "<h3>Résultat des statistiques de 'positivité' des articles en anglais</h3>";
+                                }
+                                // echo "<p id='res'>".utf8_encode($_SESSION["output"])."</p>";
 
-                            else if($_GET["btn"] == "titre_en"){
-                                echo "<h3>Titre des articles en anglais</h3>";
+                                if ($_GET["btn"] == "titre_fr" or $_GET["btn"] == "titre_en"){
+                                    echo "<table>";
+                                        echo "<tr>";
+                                            echo "<th>Titre des articles en français</th>";
+                                        echo "</tr>";
+
+                                        $resultat = str_replace(["['", "']",'\xa0', '«', '»'], '', utf8_encode($_SESSION["output"]));
+                                        $resultat = explode("', '", $resultat);
+
+                                        foreach ($resultat as $value) {
+                                            echo "<tr><td>".$value."</td></tr>";
+                                        }
+                                    echo "</table>";
+                                }
+                                else if($_GET["btn"] == "resultat_fr" or $_GET["btn"] == "resultat_en"){
+                                    
+                                    // echo "<p id='res'>".$_SESSION["output"]."</p>";
+                                    $resultat = str_replace(["(", ")"], '', $_SESSION["output"]);
+                                    $resultat = explode(",", $resultat);
+                                    $resultat_positif = floatval($resultat[0]);
+                                    $resultat_negatif = floatval($resultat[1]);
+                                    ?>
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                                    <div>
+                                        <canvas id="PieChart"></canvas>
+                                    </div>
+
+                                    <script>
+
+                                        // Récupérer le contexte du canvas
+                                            var ctx = document.getElementById('PieChart').getContext('2d');
+
+                                            // Données du graphique (exemple)
+                                            var data = {
+                                            labels: ['Positif','Négatif'],
+                                            datasets: [{
+                                                data: [<?= $resultat_positif ?>, <?= $resultat_negatif ?>], // Les pourcentages ou les valeurs numériques pour chaque secteur
+                                                backgroundColor: ['red', 'green'], // Couleurs pour chaque secteur
+                                            }]
+                                            };
+
+                                            // Configuration du graphique
+                                            var options = {
+                                            responsive: true,
+                                            maintainAspectRatio: false,
+                                            };
+
+                                            // Création du graphique en secteurs
+                                            var myPieChart = new Chart(ctx, {
+                                            type: 'pie',
+                                            data: data,
+                                            options: options
+                                            });
+
+                                    </script>
+                                    <?php
+                                }
+
+                                
                             }
-                            
-                            else if($_GET["btn"] == "resultat_en"){
-                                echo "<h3>Résultat des statistiques de 'positivité' des articles en anglais</h3>";
-                            }
-                            echo "<p id='res'>".utf8_encode($_SESSION["output"])."</p>";
-                        }
-                        ?>
+                            ?>
+                        </div>
                     </div>
                 </div>
-
         </main>
 
         <?php 
