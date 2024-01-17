@@ -100,7 +100,7 @@
                                                 <input type="submit" name="envoyer" id="envoyer" value="Lancer la simulation">
                                             </div>
                                         </div>
-                                        <div class="simulation-monteCarloPi-res-container">
+                                        <div class="simulation-monteCarloPi-res-container" id="resultat">
                                             <div class="simulation-monteCarloPi-res-main">
                                                 <?php
                                                 if (isset($_GET["N"])){

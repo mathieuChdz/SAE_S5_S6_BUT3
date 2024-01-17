@@ -556,10 +556,6 @@ p, a {
     line-height: 1.6em;
 }
 
-.main-introduction p{
-    font-size: 1em;
-}
-
 .main-graphique{
     grid-column: 2 / 3;
     grid-row: 4 / 5;

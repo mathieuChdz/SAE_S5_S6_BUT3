@@ -1,9 +1,1 @@
-Simulations de Monte Carlo terminées.
-Nœuds : 1
-Temps écoulé : 0.02 secondes
-Traceback (most recent call last):
-  File "C:\Users\chedo\Documents\BUT3\SAE\sae-s5\src_web\php\Module_Proba\montecarlompi.py", line 72, in <module>
-    main()
-  File "C:\Users\chedo\Documents\BUT3\SAE\sae-s5\src_web\php\Module_Proba\montecarlompi.py", line 67, in main
-    resultat_final = np.sum(results.flatten()) / len(results.flatten())
-TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'
+Unknown option: --host

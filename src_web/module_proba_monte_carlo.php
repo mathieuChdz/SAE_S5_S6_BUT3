@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>LTM | prababilité</title>
+        <title>LTM | probabilité</title>
         <link href="img/logo_ltm_w_mini.svg" rel="icon">
 
         <?php 
@@ -36,12 +36,19 @@
                         </div>
 
                         <div class="proba-explication-main">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                            </p>
+                            <p>Ce module a pour but de calculer des probabilités de loi normales grâce à la méthode de Monte-Carlo. <a href="module_monte_carlo.php">(cliquez ici pour en savoir plus sur la méthode de Monte Carlo)</a></p>
+                            <p>Notre module permet d'effectuer différents calculs en suivant la loi Normale basée sur la moyenne (M) et l'écart-type (σ) </p>
+                            <p>Les calculs que vous pouvez effectuer sont les suivants :</p>
+                            <p>Si T1 est vide : Résultat = P(X < T2)</p>
+                            <p>Si T2 est vide : Résultat = P(X > T1)</p>
+                            <p>Si aucun est vide :Résultat = P(T1 < X < T2)</p>
+                            
+                            <div class="proba-monte-carlo-explication-warning">
+                                <p><b>Précisions</b></p>
+                                <p>Il est possible de ne rentrer qu'une seule valeure pour T1 et T2, les deux ne doivent pas être vide.</p>
+                                <p>Vous devez obligatoirement completez les champs M et σ qui correspondent à la moyenne et l'écart-type.</p>
+                            </div>
+                        
                             <p>Le module de proba a été développé en python</p>
                         </div>
                         
@@ -57,6 +64,13 @@
                                     <div class="main-form">
                                         <div class="form-container-title">
                                             <h2>Paramètres</h2>
+                                            <?php
+                                            if (isset($_GET["err"])){
+                                                if ($_GET["err"] == '1'){
+                                                    echo "<p id='form-err'>Les paramètres T1 et T2 sont nulles !</p>";
+                                                }          
+                                            }
+                                            ?>
                                         </div>
                                         <div class="form-inputs">
                                             <div class="form-m">
@@ -79,7 +93,7 @@
                                                 <input type="submit" name="envoyer" id="envoyer" value="Lancer la simulation">
                                             </div>
                                         </div>
-                                        <div class="simulation-proba-res-container">
+                                        <div class="simulation-proba-res-container" id="resultat">
                                             <div class="simulation-proba-res-main">
                                                 <?php
                                                 if (isset($_GET["res"])){

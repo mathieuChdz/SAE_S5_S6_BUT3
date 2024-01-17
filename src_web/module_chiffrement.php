@@ -72,7 +72,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="simulation-chiffrement-res-container">
+                                        <div class="simulation-chiffrement-res-container" id="resultat">
                                             <div class="simulation-chiffrement-res-main">
                                                 <?php
                                                 if (isset($_GET["res"])){

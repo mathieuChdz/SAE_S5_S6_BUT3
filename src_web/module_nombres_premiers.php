@@ -70,7 +70,7 @@ session_start();
                                 </form>
                             </div>
                     </div>
-                    <div class="simulation-np-res-container">
+                    <div class="simulation-np-res-container" id="resultat">
                         <div class="simulation-np-res-main">
                             <?php
                             if (isset($_GET["N"])){

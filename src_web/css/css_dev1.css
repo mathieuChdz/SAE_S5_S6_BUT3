@@ -489,6 +489,17 @@ ul li{
   font-size: var(--font-size-s);
 }
 
+.proba-explication-main a{
+  font-size: 1em;
+}
+
+.proba-explication-main .proba-monte-carlo-explication-warning{
+  background-color: rgba(186, 220, 64, 0.3);
+  border: solid 1px rgba(186, 220, 64, 5);
+  padding: 0.5em 1em;
+  border-radius: 0.7em;
+}
+
 .proba-main-simulation{
   display: flex;
   flex-direction: column;
@@ -573,6 +584,10 @@ ul li{
 
 /* ########################### Module web scraping page ########################### */
 
+.web-scraping-container{
+  color: var(--color-white);
+}
+
 .web-scraping-container .main-explication-titre,
 .web-scraping-container .main-simulation-titre{
   padding: 3em;
@@ -604,4 +619,30 @@ ul li{
   cursor: pointer;
   text-shadow: none!important;
   background-color: var(--color-green-secondary-hover);
+}
+
+.simulation-web-scraping-res-main h2,
+.simulation-web-scraping-res-main h3{
+  text-align: center;
+}
+
+.simulation-web-scraping-res-main table{
+  width: 100%;
+  border-spacing: 5px;
+}
+
+.simulation-web-scraping-res-main table th,
+.simulation-web-scraping-res-main table td{
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.simulation-web-scraping-res-main table th{
+  background-color: var(--color-green-primary);
+}
+
+.simulation-web-scraping-res-main table td{
+  background-color: var(--color-green-secondary);
+  font-size: var(--font-size-s);
 }

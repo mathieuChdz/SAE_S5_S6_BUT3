@@ -20,18 +20,18 @@ if (isset($_POST['envoyer'], $_POST['e_t'], $_POST['t'], $_POST['m'])){
         if ($_POST['choix'] == "r_m"){
                 echo "ok1";
                 $res = exec("python3 Module_Proba/rectangle_medians.py $arg1 $arg2 $arg3");
-                header("Location: ../module_proba.php?res=$res&methode=1");
+                header("Location: ../module_proba.php?res=$res&methode=1#resultat");
             }
             if ($_POST['choix'] == "trapezes"){
                 echo "ok2";
                 $res = exec("python3 Module_Proba/trapeze.py $arg1 $arg2 $arg3");
-                header("Location: ../module_proba.php?res=$res&methode=2");
+                header("Location: ../module_proba.php?res=$res&methode=2#resultat");
             }
         
             if ($_POST['choix'] == "simpson"){
                 echo "ok3";
                 $res = exec("python3 Module_Proba/simpson.py $arg1 $arg2 $arg3");
-                header("Location: ../module_proba.php?res=$res&methode=3");
+                header("Location: ../module_proba.php?res=$res&methode=3#resultat");
             }
     }
 

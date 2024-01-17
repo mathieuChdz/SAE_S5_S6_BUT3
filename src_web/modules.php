@@ -33,7 +33,7 @@
                     </div>
                     <div class="main-explication-texte">
                         <p>Les différents modules présents sur la page ont été réalisés entre début 2023 et début 2024 durant nos notre deuxième et troisème année de BUT Informatique.
-                            L'objectif de ces derniers est de pouvoir réaliser diverses simulations dans différents domaines (prababilités, chiffrement, web scraping, ...).
+                            L'objectif de ces derniers est de pouvoir réaliser diverses simulations dans différents domaines (probabilités, chiffrement, web scraping, ...).
                             Alors n'attendez plus ! Parcourez les modules disponibles et exécutez vos propres simulations !</s>
                         </p>
                     </div>
