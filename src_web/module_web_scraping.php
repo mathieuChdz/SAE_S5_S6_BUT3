@@ -111,25 +111,20 @@
 
                                     <script>
 
-                                        // Récupérer le contexte du canvas
                                             var ctx = document.getElementById('PieChart').getContext('2d');
 
-                                            // Données du graphique (exemple)
                                             var data = {
                                             labels: ['Positif','Négatif'],
                                             datasets: [{
-                                                data: [<?= $resultat_positif ?>, <?= $resultat_negatif ?>], // Les pourcentages ou les valeurs numériques pour chaque secteur
-                                                backgroundColor: ['red', 'green'], // Couleurs pour chaque secteur
+                                                data: [<?= $resultat_positif ?>, <?= $resultat_negatif ?>], 
+                                                backgroundColor: ['rgba(67, 192, 76, 1)', 'rgba(225, 89, 67, 1)'], 
                                             }]
                                             };
-
-                                            // Configuration du graphique
                                             var options = {
                                             responsive: true,
                                             maintainAspectRatio: false,
                                             };
 
-                                            // Création du graphique en secteurs
                                             var myPieChart = new Chart(ctx, {
                                             type: 'pie',
                                             data: data,

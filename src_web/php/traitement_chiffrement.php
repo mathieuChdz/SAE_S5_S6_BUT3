@@ -36,7 +36,7 @@ if (isset($_POST['word'])){
     
                 $res = exec("python3 Module_Chiffrement/codage.py $arg1 $arg2 $arg3"); 
 
-                header("Location: ../module_chiffrement.php?res=$res");
+                header("Location: ../module_chiffrement.php?res=$res#resultat");
             }
             // la variable clé est nulle
             else{
@@ -62,7 +62,7 @@ if (isset($_POST['word'])){
 
                 $res = exec("python3 Module_Chiffrement/decodage.py $arg1 $arg2"); 
                 
-                header("Location: ../module_chiffrement.php?res=$res");
+                header("Location: ../module_chiffrement.php?res=$res#resultat");
             }
             // la variable clé est nulle
             else{

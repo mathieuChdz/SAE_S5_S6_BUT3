@@ -28,7 +28,7 @@ if (isset($_POST['envoyer'], $_POST['e_t'], $_POST['m'])){
     
             $resultat = exec("mpiexec -n 4 --host node1,node2,node3,node4 python3 Module_Proba/montecarlompi.py $arg1 $arg2 $arg3 $arg4 > resultat.txt 2>&1", $output, $return_var);
             $_SESSION['resultat'] = $resultat;
-            header("Location: ../module_proba_monte_carlo.php?res=true");
+            header("Location: ../module_proba_monte_carlo.php?res=true#resultat");
     
             // vide les valeurs du formulaire
             unset($_POST);

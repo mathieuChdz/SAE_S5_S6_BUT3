@@ -93,7 +93,7 @@
                                                 <input type="submit" name="envoyer" id="envoyer" value="Lancer la simulation">
                                             </div>
                                         </div>
-                                        <div class="simulation-proba-res-container">
+                                        <div class="simulation-proba-res-container" id="resultat">
                                             <div class="simulation-proba-res-main">
                                                 <?php
                                                 if (isset($_GET["res"])){
