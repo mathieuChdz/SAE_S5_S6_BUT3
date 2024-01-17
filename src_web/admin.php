@@ -1,103 +1,89 @@
-<?php
-//mettre un message quand la recherche d'user ne renvoie r
-
-    //On démarre une cession existe.
-    session_start();
-    //On vérifie si une cession existe.
-    if(isset($_SESSION['user'])) {
-        //Si c'est un simple utilisateur, on renvois sur la page de connexion.
-        if($_SESSION['user']['type_user'] == 'user'){
-            header('Location: index.php');
-            die();
-        }
-    //Si aucune cession n'existe on renvoie sur la page de connexion.
-    }else{
-        header('Location: connexion.php');
-        die();
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>LTM | Administration</title>
-        <link href="img/logo_ltm_w_mini.svg" rel="icon">
-
-        <?php 
-        include("imports/header.html");
-        ?>
-    </head>
-
-    <body>
-
-        <header>
-        </header>
-
-        <?php 
-        include("imports/navbar.php");
-        ?>
-
-        <main>
-            <div class="container-background">
-                <div class="background">
-                    <div class="circle1"></div>
-                    <div class="circle2"></div>
-                </div>
+<head>
+    <title>LTM | Administration</title>
+    <link href="img/logo_ltm_w_mini.svg" rel="icon">
+    <?php include("imports/header.html"); ?>
+    <!-- Inclure la bibliothèque Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header></header>
+    <?php include("imports/navbar.php"); ?>
+    <main>
+        <div class="container-background">
+            <div class="background">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
             </div>
+        </div>
+        <div class="main-container">
+            <div class="main-explication">
+                <!-- ... (votre code existant) ... -->
+            </div>
+            <div class="admin-panel-monitor-hardware">
+                <h1>System Monitoring</h1>
+                <!-- Ajouter un canvas pour le graphique -->
+                <canvas id="cpuChart" width="400" height="200"></canvas>
+                <script>
+                    // Initialiser une liste pour stocker les données CPU
+                    var cpuData = Array(60).fill(0);
 
-            <div class="main-container">
-                <div class="main-explication">
-                    <div class="main-explication-title">
-                        <h2>Panel Administrateur</h2>
-                    </div>
-                    <div class="main-explication-texte">
-                        <p>Ce panel est <strong>strictement</strong> réservé au personnel autorisé.</p>
-                    </div>
-                </div>
-
-                <div class="admin-panel-monitor-hardware">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <h1>System Monitoring</h1>
-                    <div id="monitoring-data"></div>
-
-                    <script>
-                        function fetchData() {
-                            // Effectuer une requête AJAX vers le script CGI
-                            var xhr = new XMLHttpRequest();
-                            xhr.open("GET", "/cgi-bin/monitor_cgi.py", true);
-                            xhr.onreadystatechange = function () {
-                                if (xhr.readyState === 4 && xhr.status === 200) {
-                                    // Mettre à jour les données sur la page
-                                    var data = JSON.parse(xhr.responseText);
-                                    document.getElementById("monitoring-data").innerHTML =
-                                        '<p>CPU Usage: ' + data.cpu_percent + '%</p>' +
-                                        '<p>Memory Usage: ' + data.mem_percent + '%</p>';
+                    // Obtenir la référence du canvas et créer le graphique
+                    var ctx = document.getElementById("cpuChart").getContext("2d");
+                    var cpuChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: Array.from({length: 60}, (_, i) => (i + 1).toString()), // Labels pour les 60 dernières secondes
+                            datasets: [{
+                                label: 'CPU Usage',
+                                data: cpuData,
+                                fill: false,
+                                borderColor: 'rgb(75, 192, 192)',
+                                tension: 0.1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    max: 100
                                 }
-                            };
-                            xhr.send();
+                            }
                         }
+                    });
 
-                        // Mettre à jour les données toutes les 10 secondes (10000 millisecondes)
-                        setInterval(fetchData, 10000);
+                    function fetchData() {
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("GET", "/cgi-bin/monitor_cgi.py", true);
+                        xhr.onreadystatechange = function () {
+                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                var data = JSON.parse(xhr.responseText);
+                                
+                                // Ajouter la nouvelle valeur de CPU à la liste (enlever le premier élément et ajouter le nouveau)
+                                cpuData.shift();
+                                cpuData.push(data.cpu_percent);
 
-                        // Appeler fetchData une fois au chargement de la page
-                        fetchData();
-                    </script>
-                </div>
+                                // Mettre à jour le graphique
+                                cpuChart.update();
+
+                                // Mettre à jour les autres données sur la page
+                                document.getElementById("monitoring-data").innerHTML =
+                                    '<p>CPU Usage: ' + data.cpu_percent + '%</p>' +
+                                    '<p>Memory Usage: ' + data.mem_percent + '%</p>' +
+                                    '<p>Uptime: ' + data.uptime + ' seconds</p>' +
+                                    '<p>Boot Time: ' + data.boot_time + '</p>';
+                            }
+                        };
+                        xhr.send();
+                    }
+
+                    setInterval(fetchData, 1000);
+                    fetchData(); // Appeler fetchData une fois au chargement de la page
+                </script>
             </div>
-        </main>
-
-        <?php 
-            include("imports/footer.html");
-        ?>
-
-    </body>
-
+        </div>
+    </main>
+    <?php include("imports/footer.html"); ?>
+</body>
 </html>
