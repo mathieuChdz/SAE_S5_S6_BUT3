@@ -6,22 +6,22 @@ session_start();
 if (isset($_POST['envoyer'], $_POST['e_t'], $_POST['m'])){
 
     // vérification que les paramètres ne sont pas nulles
-    if ($_POST['t1']!=null and $_POST['t2']!=null){
+    if ($_POST['t1']!=null or $_POST['t2']!=null){
         if ($_POST['envoyer']!=null and $_POST['e_t']!=null and $_POST['m']!=null){
 
             if ($_POST['t1']!=null){
                 $arg3 = $_POST['t1'];
             }
             else{
-                $arg3 = 0;
+                $arg3 = "0";
             }
     
             if ($_POST['t2']!=null){
                 $arg4 = $_POST['t2'];
             }
             else{
-                $arg4 = 0;
-            }
+                $arg4 = "0";
+	    }
     
             $arg1 = $_POST['m'];
             $arg2 = $_POST['e_t'];

@@ -3,6 +3,7 @@ import numpy as np
 from mpi4py import MPI
 import sys
 import time
+import math
 
 def monte_carlo_probabilite_normale(moyenne, ecart_type, t1=None, t2=None, nbr_echantillons=300000):
     if t1 is not None and t2 is not None and t1 >= t2:
@@ -37,10 +38,10 @@ def main():
     t1 = int(sys.argv[3]) if len(sys.argv) > 1 else None
     t2 = int(sys.argv[4]) if len(sys.argv) > 1 else None
 
-    if t1 == 0:
-        t1 = None
-    if t2 == 0:
-        t2 = None
+    if t1 == "0":
+        t1 == None
+    if t2 == "0":
+        t2 == None
         
     nbr_echantillons = 300000
 
