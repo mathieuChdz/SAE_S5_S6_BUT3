@@ -95,7 +95,47 @@
                                         }
                                     echo "</table>";
                                 }
-                                else if($_GET["btn"] == "resultat_fr" or $_GET["btn"] == "resultat_en"){
+                                else if($_GET["btn"] == "resultat_fr"){
+                                    
+                                    // echo "<p id='res'>".$_SESSION["output"]."</p>";
+                                    $resultat = str_replace(["(", ")"], '', $_SESSION["output"]);
+                                    $resultat = explode(",", $resultat);
+                                    $resultat_positif = floatval($resultat[0]);
+                                    $resultat_neutre = floatval($resultat[1]);
+                                    $resultat_negatif = floatval($resultat[2]);
+                                    ?>
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                                    <div>
+                                        <canvas id="PieChart"></canvas>
+                                    </div>
+
+                                    <script>
+
+                                            var ctx = document.getElementById('PieChart').getContext('2d');
+
+                                            var data = {
+                                            labels: ['Positif', 'Neutre', 'Négatif'],
+                                            datasets: [{
+                                                data: [<?= $resultat_positif ?>, <?= $resultat_neutre ?>, <?= $resultat_negatif ?>], 
+                                                backgroundColor: ['rgba(67, 192, 76, 1)', 'rgba(226, 237, 49, 0.8)', 'rgba(225, 89, 67, 1)'], 
+                                            }]
+                                            };
+                                            var options = {
+                                            responsive: true,
+                                            maintainAspectRatio: false,
+                                            };
+
+                                            var myPieChart = new Chart(ctx, {
+                                            type: 'pie',
+                                            data: data,
+                                            options: options
+                                            });
+
+                                    </script>
+                                    <?php
+                                }
+                                else if($_GET["btn"] == "resultat_en"){
                                     
                                     // echo "<p id='res'>".$_SESSION["output"]."</p>";
                                     $resultat = str_replace(["(", ")"], '', $_SESSION["output"]);

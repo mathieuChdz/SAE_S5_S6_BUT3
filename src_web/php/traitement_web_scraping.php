@@ -6,16 +6,16 @@ if (isset($_POST["send"])){
     #echo $_POST["send"];
 
     if ($_POST["send"] == "titre_fr"){
-        $res = exec("python3 Module_WebScraping/webscrapingv2_01.py 1");
+        $res = exec("python3 Module_WebScraping/webscrapingv2_02.py 1");
     }
     elseif ($_POST["send"] == "resultat_fr"){
-        $res = exec("python3 Module_WebScraping/webscrapingv2_01.py 2");
+        $res = exec("python3 Module_WebScraping/webscrapingv2_02.py 2");
     }
     elseif ($_POST["send"] == "titre_en"){
-        $res = exec("python3 Module_WebScraping/webscrapingv2_01.py 3");
+        $res = exec("python3 Module_WebScraping/webscrapingv2_02.py 3");
     }
     elseif ($_POST["send"] == "resultat_en"){
-        $res = exec("python3 Module_WebScraping/webscrapingv2_01.py 4");
+        $res = exec("python3 Module_WebScraping/webscrapingv2_02.py 4");
     }
     else{
 
