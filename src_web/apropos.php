@@ -51,16 +51,14 @@
                             <h2>L'architecture utilisée</h2>
                         </div>
                         <div class="explication-sea-archi-main">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at odio consectetur, dapibus justo eu, volutpat lacus. 
-                                Vivamus hendrerit, augue ac fringilla molestie, ante purus finibus neque, et ullamcorper urna dolor eget odio. 
-                                Quisque in blandit libero. Duis malesuada sem non lobortis consectetur. Maecenas eu tincidunt lorem. Cras mi erat, rhoncus a dolor sed, scelerisque euismod lacus. 
-                                Donec a diam molestie, tincidunt sem quis, tempor nunc. Nunc ornare purus leo, at lobortis ipsum porta in.
-                            </p>
-                            <p>
-                                Vivamus semper urna in mauris pretium gravida. Donec ac enim quam. Sed viverra purus quis ultricies auctor. 
-                                Etiam ac aliquam ipsum. Proin gravida laoreet nisi, at egestas quam dapibus ac. Aenean iaculis fermentum tellus sed convallis. 
-                                Etiam vitae leo eu dui suscipit feugiat. Proin porta justo urna, in tincidunt nunc aliquam pharetra. Integer in magna in mi semper tristique.
-                            </p>
+                            <p>l'architecture utilisée est un Kit Cluster hat. Ce dernier est composé de :</p>
+                            <ul>
+                                <li>1 Rpi 4 Modèle B d'une capacité mémoire de 4 Go. Il s'agit du cœur de notre système. Le Raspberry Pi 4 est un ordinateur monocarte doté de suffisamment de puissance de calcul pour l’utilisation que nous souhaitons en faire.</li>
+                                <li>1 Pimoroni Cluster HAT v2.5 pour Raspberry Pi 0. C'est l'élément clé de notre cluster informatique. Cette carte d'extension permet de connecter jusqu'à quatre Raspberry Pi Zero W, créant ainsi un cluster de calcul distribué.</li>
+                                <li>4 Rpi 0 W. Ces mini-ordinateurs, dotés de capacités de connectivité sans fil, sont les nœuds du cluster. Bien que compacts, les Raspberry Pi Zero W sont capables d'exécuter des tâches légères et de contribuer à la puissance de calcul globale du cluster.</li>
+                                <li>5 Carte Micro SD de 16 Go. Les cartes microSD sont les supports de stockage pour nos Raspberry Pi. Avec une capacité de stockage de 16 Go chacune, elles fournissent l'espace nécessaire pour les systèmes d'exploitation, les applications et les données nécessaires au bon fonctionnement de notre cluster.</li>
+                            </ul>
+                            <p>Ce cluster ou regroupement, permet la réalisation de notre projet sans se soucier des spécifications techniques et sans être bridés.</p>
                             <div class="archi-img">
                                 <img src="img/schema_archi_rpi.png" alt="schéma architecture rpi"/>
                                 <p>Figure : architecture Rpi 4 B Cluster Hat</p>
@@ -89,10 +87,7 @@
                                     </div>
                                     <div class="team-item-main">
                                         <h3>Belaidi Elyas</h3>
-                                        <p>Vivamus semper urna in mauris pretium gravida. Donec ac enim quam. Sed viverra purus quis ultricies auctor. 
-                                            Etiam ac aliquam ipsum. Proin gravida laoreet nisi, at egestas quam dapibus ac. Aenean iaculis fermentum tellus sed convallis. 
-                                            Etiam vitae leo eu dui suscipit feugiat. Proin porta justo urna, in tincidunt nunc aliquam pharetra. Integer in magna in mi semper tristique.
-                                        </p>
+                                        <p>"Le travail individuel permet de gagner un match mais c'est l'esprit d'équipe et l'intelligence collective qui permet de gagner les trophées."</p>
                                     </div>
                                 </div>                                
                                 <div class="sae-team-item" id="tree">
@@ -122,10 +117,7 @@
                                     </div>
                                     <div class="team-item-main">
                                         <h3>Chedozeau Mathieu</h3>
-                                        <p>Vivamus semper urna in mauris pretium gravida. Donec ac enim quam. Sed viverra purus quis ultricies auctor. 
-                                            Etiam ac aliquam ipsum. Proin gravida laoreet nisi, at egestas quam dapibus ac. Aenean iaculis fermentum tellus sed convallis. 
-                                            Etiam vitae leo eu dui suscipit feugiat. Proin porta justo urna, in tincidunt nunc aliquam pharetra. Integer in magna in mi semper tristique.
-                                        </p>
+                                        <p>"Certains veulent que ça arrive, d'autres aimeraient que ça arrive et quelques-uns font que ça arrive."</p>
                                     </div>
                                 </div>
                             </div>
