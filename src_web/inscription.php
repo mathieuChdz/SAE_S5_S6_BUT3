@@ -31,7 +31,7 @@
                     <form action='process_forms/process_inscription.php' method='post'>
                         <div class="main-form">
                             <div class="form-container-title">
-                                <h2>Connexion</h2>
+                                <h2>Inscription</h2>
                             </div>
                             <?php
                             //On verifie si une erreur à été envoyé.
@@ -99,7 +99,7 @@
                                 <div class="form-submit">
                                     <input type="submit" name="envoyer" id="envoyer" value="Se connecter">
                                     <div class="form-inscription">
-                                        <p>Vous n’avez pas de compte ?</p>
+                                        <p>Vous avez déjà un compte ?</p>
                                         <a href="connexion.php">Cliquez Ici !</a>
                                     </div>
                                 </div>
