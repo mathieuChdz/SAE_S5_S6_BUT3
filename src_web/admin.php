@@ -58,7 +58,32 @@
                     });
 
 
+                    // Initialiser une liste pour stocker les données MEMOIRE
+                    var memData = Array(60).fill(0);
 
+                    // Obtenir la référence du canvas et créer le graphique
+                    var ctx2 = document.getElementById("memChart").getContext("2d");
+                    var memChart = new Chart(ctx2, {
+                        type: 'line',
+                        data: {
+                            labels: Array.from({length: 60}, (_, i) => (i + 1).toString()), // Labels pour les 60 dernières secondes
+                            datasets: [{
+                                label: 'Memory Usage',
+                                data: memData,
+                                fill: false,
+                                borderColor: 'rgb(255, 255, 255)',
+                                tension: 0.1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    max: 100
+                                }
+                            }
+                        }
+                    });
 
                     function fetchData() {
                         var xhr = new XMLHttpRequest();
@@ -73,21 +98,19 @@
                                     cpuData.push(data.cpu_percent);
                                     cpuChart.update();
 
+                                    memData.shift();
+                                    memData.push(data.mem_percent);
+                                    memChart.update();
 
                                     document.getElementById("monitoring-data").innerHTML =
                                         '<p>CPU Usage: ' + data.cpu_percent + '%</p>' +
                                         '<p>Memory Usage: ' + data.mem_percent + '%</p>' +
                                         '<p>Uptime: ' + data.uptime + ' seconds</p>' +
                                         '<p>Boot Time: ' + data.boot_time + '</p>';
-                                    console.log(data.cpu_percent);
-                                    console.log(data.mem_percent);
-                                    console.log(data.uptime);
-                                    console.log(data.boot_time);
 
                                     xhr.send();
                                 } else {
                                     // Gérer les erreurs ici
-                                    console.log("Erreur data");
                                 }
                             }
                         };
