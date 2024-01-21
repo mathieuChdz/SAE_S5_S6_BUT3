@@ -107,10 +107,15 @@
                                         '<p>Memory Usage: ' + data.mem_percent + '%</p>' +
                                         '<p>Uptime: ' + data.uptime + ' seconds</p>' +
                                         '<p>Boot Time: ' + data.boot_time + '</p>';
+                                    console.log(data.cpu_percent);
+                                    console.log(data.mem_percent);
+                                    console.log(data.uptime);
+                                    console.log(data.boot_time);
 
                                     xhr.send();
                                 } else {
                                     // Gérer les erreurs ici
+                                    console.log("Erreur data");
                                 }
                             }
                         };
