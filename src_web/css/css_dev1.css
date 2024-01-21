@@ -655,3 +655,12 @@ ul li{
   background-color: var(--color-green-secondary);
   font-size: var(--font-size-s);
 }
+
+
+/* ########################### a propos page ########################### */
+
+.explication-sea-team-main .sae-team-item .team-item-img img{
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.5em;
+}
