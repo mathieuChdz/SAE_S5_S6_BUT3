@@ -206,6 +206,14 @@ ul li{
   }
 }
 
+/* ########################### main form responsive ########################### */
+
+@media only screen and (max-width: 400px){
+  .main-form{
+    max-width: 25em;
+    min-width: 25em;
+  }
+}
 
 /* ########################### connexion page ########################### */
 

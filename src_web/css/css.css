@@ -875,6 +875,7 @@ p, a {
         width: 100%;
         top: 80px;
         left: 0px;
+        -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         height: 100vh;
         gap: 50px;
