@@ -35,15 +35,10 @@ def main():
 
     m = int(sys.argv[1]) if len(sys.argv) > 1 else 0
     e_t = int(sys.argv[2]) if len(sys.argv) > 1 else 1
-    t1 = int(sys.argv[3]) if len(sys.argv) > 1 else None
-    t2 = int(sys.argv[4]) if len(sys.argv) > 1 else None
+    t1 = int(sys.argv[3]) if len(sys.argv) > 1 and sys.argv[3] != "None" else None
+    t2 = int(sys.argv[4]) if len(sys.argv) > 1 and sys.argv[4] != "None" else None
 
-    if t1 == "0":
-        t1 == None
-    if t2 == "0":
-        t2 == None
-        
-    nbr_echantillons = 300000
+    nbr_echantillons = 10000000
 
     nbr_echant_mpi = nbr_echantillons//cluster_size
 
@@ -53,7 +48,7 @@ def main():
     start=time.time()
     # Chaque nœud exécute son propre calcul
     local_results = tester_monte_carlo(my_samples, m, e_t, t1, t2)
-
+    print(local_results)
     # Rassembler les résultats sur le nœud maître
     results = np.array(comm.gather(local_results, root=0))
 
@@ -64,7 +59,7 @@ def main():
         print("Nœuds :", cluster_size)
         print("Temps écoulé :", end, "secondes")
 
-        #print(results.flatten())
+        print(results.flatten())
         resultat_final = np.sum(results.flatten()) / len(results.flatten())
         print(resultat_final)
 
