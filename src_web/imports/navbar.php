@@ -27,7 +27,7 @@
                             <a class='global-navbar-links-connexion nav-links' href='404.php'>Mon espace</a>
                             <a class='global-navbar-links-connexion nav-links' href='admin.php'>Admin</a>
                             <a class='global-navbar-links-connexion nav-links' href='deconnexion.php'>Se déconnecter</a>
-                            <img class='nav-resp-menu' src='img/menu_resp.png' onclick='toggleMenu()'>
+                            <img class='nav-resp-menu' src='img/menu_resp.png' alt='icon menu burger' onclick='toggleMenu()'>
                             ";
                         }else{
                             // Compte utilisateur
@@ -37,7 +37,7 @@
                             <a class='nav-links' href='apropos.php'>A propos</a>
                             <a class='global-navbar-links-connexion nav-links' href='404.php'>Mon espace</a>
                             <a class='global-navbar-links-connexion nav-links' href='deconnexion.php'>Se déconnecter</a>
-                            <img class='nav-resp-menu' src='img/menu_resp.png' onclick='toggleMenu()'>
+                            <img class='nav-resp-menu' src='img/menu_resp.png' alt='icon menu burger' onclick='toggleMenu()'>
                             ";
                         }
                     }else{
@@ -47,7 +47,7 @@
                         <a class='nav-links' href='modules.php'>Modules</a>
                         <a class='nav-links' href='apropos.php'>A propos</a>
                         <a class='global-navbar-links-connexion nav-links' href='connexion.php'>Se connecter</a>
-                        <img class='nav-resp-menu' src='img/menu_resp.png' onclick='toggleMenu()'>
+                        <img class='nav-resp-menu' src='img/menu_resp.png' alt='icon menu burger' onclick='toggleMenu()'>
                         ";
                     }
                 ?>
