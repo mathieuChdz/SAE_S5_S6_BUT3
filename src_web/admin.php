@@ -23,10 +23,11 @@
             </div>
             <div class="admin-panel-monitor-hardware">
                 <h1>System Monitoring</h1>
+                <div id="monitoring-data-list" class="monitoring-data-list"></div>
                 <!-- Ajouter un canvas pour le graphique -->
                 <div class="admin-pan-container-chart">
-                    <canvas id="cpuChart" style="max-width: 50%; max-height: 400px;"></canvas>
-                    <canvas id="memChart" style="max-width: 50%; max-height: 400px;"></canvas> 
+                    <canvas id="cpuChart" class="chart-canva"></canvas>
+                    <canvas id="memChart" class="chart-canva"></canvas> 
                 </div>
                 
                 <script>
@@ -89,33 +90,46 @@
                         var xhr = new XMLHttpRequest();
                         xhr.open("GET", "/cgi-bin/monitor_cgi.py", true);
                         xhr.onreadystatechange = function () {
-                            if (xhr.readyState === 4) {
-                                console.log(xhr.status === 200)
-                                if ((xhr.status === 200) && (xhr.status !== 404)) {
-                                    // La requête s'est bien déroulée, traiter les données
-                                    var data = JSON.parse(xhr.responseText);
-                                    cpuData.shift();
-                                    cpuData.push(data.cpu_percent);
-                                    cpuChart.update();
+                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                var data = JSON.parse(xhr.responseText);
+                                
+                                // Ajouter les nouvelles valeurs de CPU et mémoire aux listes
+                                cpuData.shift();
+                                cpuData.push(data.cpu_percent);
 
-                                    memData.shift();
-                                    memData.push(data.mem_percent);
-                                    memChart.update();
+                                memData.shift();
+                                memData.push(data.mem_percent);
 
-                                    document.getElementById("monitoring-data").innerHTML =
-                                        '<p>CPU Usage: ' + data.cpu_percent + '%</p>' +
-                                        '<p>Memory Usage: ' + data.mem_percent + '%</p>' +
-                                        '<p>Uptime: ' + data.uptime + ' seconds</p>' +
-                                        '<p>Boot Time: ' + data.boot_time + '</p>';
+                                // Mettre à jour les graphiques
+                                cpuChart.update();
+                                memChart.update();
 
-                                    xhr.send();
-                                } else {
-                                    // Gérer les erreurs ici
+                                if(data.cpu_percent >= 85){
+                                    var color_txt = "moni-col-red";
+                                }else if(data.cpu_percent >= 60 && data.cpu_percent < 85){
+                                    var color_txt = "moni-col-orange";
+                                }else{
+                                    var color_txt = "moni-col-green";
                                 }
+
+                                if(data.mem_percent >= 85){
+                                    var color_txt_m = "moni-col-red";
+                                }else if(data.mem_percent >= 60 && data.mem_percent < 85){
+                                    var color_txt_m = "moni-col-orange";
+                                }else{
+                                    var color_txt_m = "moni-col-green";
+                                }
+
+                                // Mettre à jour les autres données sur la page
+                                document.getElementById("monitoring-data-list").innerHTML =
+                                    '<p class="'+ color_txt +'">CPU Usage: ' + data.cpu_percent + '%</p>' +
+                                    '<p class="'+ color_txt_m +'">Memory Usage: ' + data.mem_percent + '%</p>' +
+                                    '<p class="moni-col-green">Uptime: ' + data.uptime + ' seconds</p>' +
+                                    '<p class="moni-col-green">Boot Time: ' + data.boot_time + '</p>';
                             }
                         };
+                        xhr.send();
                     }
-
 
                     setInterval(fetchData, 1000);
                     fetchData(); // Appeler fetchData une fois au chargement de la page

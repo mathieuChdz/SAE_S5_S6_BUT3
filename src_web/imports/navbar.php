@@ -21,7 +21,6 @@
                         if($_SESSION['user']['type_user'] != 'user'){
                             // Compte admin ou != à user
                             echo"
-                            <a class='nav-links' href='#'> admin"; echo $_SESSION['user']['type_user']; echo"</a>
                             <a class='nav-links' href='index.php'>Accueil</a>
                             <a class='nav-links' href='modules.php'>Modules</a>
                             <a class='nav-links' href='apropos.php'>A propos</a>
@@ -33,7 +32,6 @@
                         }else{
                             // Compte utilisateur
                             echo "
-                            <a class='nav-links' href='#'> user"; echo $_SESSION['user']['type_user']; echo"</a>
                             <a class='nav-links' href='index.php'>Accueil</a>
                             <a class='nav-links' href='modules.php'>Modules</a>
                             <a class='nav-links' href='apropos.php'>A propos</a>
