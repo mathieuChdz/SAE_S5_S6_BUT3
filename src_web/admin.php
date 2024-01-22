@@ -18,11 +18,9 @@
             </div>
         </div>
         <div class="main-container">
-            <div class="main-explication">
-                
-            </div>
             <div class="admin-panel-monitor-hardware">
                 <h1>System Monitoring</h1>
+                <p>Ici, vous pouvez consulter les statistiques d'utilisation du RPI Pi 4B. Vous pouvez consulter l'utilisation du CPU et de la mémoire en temps réel sur une minute et depuis combien de temps celui-ci est allumé.</p>
                 <div id="monitoring-data-list" class="monitoring-data-list"></div>
                 <!-- Ajouter un canvas pour le graphique -->
                 <div class="admin-pan-container-chart">
@@ -135,6 +133,98 @@
                     fetchData(); // Appeler fetchData une fois au chargement de la page
                 </script>
             </div>
+
+            <?php
+                //Affiche l'entierete de la table choisi selon les paramètres "table" et "texte" si un texte est entrée.
+                function recherche($texte,$table): void{
+                    //On ajoute la configuration d'accès à la base de données.
+                    $connexion=mysqli_connect("localhost","root","");
+                    $bd=mysqli_select_db($connexion,"bd_sae");
+
+                    //Si la table est user.
+                    if ($table == "users") {
+                        //On récupère toutes les information dont ont à besoin.
+                        $requete = mysqli_query($connexion,"SELECT id_u, nom_u, email_u, register_at_u, type_u from $table where nom_u like '".$texte."%'");
+                    }
+                    affichage_requete($table, $requete);
+                }
+
+                function affichage_requete($table, $requete){
+
+                    //On affiche la base d'un tableau.
+                    echo "<table class='admin-tab-users'>";
+
+                        //On affiche les titres du tableau selon la table sélectionné.
+                        if ($table == "users") {
+                            echo "<tr id='titre_tab'><th>ID User</th><th>Nom</th><th>Email</th><th>Créer le/à</th><th>Type</th><th>Action</th></tr>";
+                        }
+
+                        while ($ligne = mysqli_fetch_row($requete)) {
+                            echo "<tr>";
+                            foreach ($ligne as $v) { //parcours tableau de mysqli_fetch_row
+                                echo "<td>" . $v . "</td>";
+                            }
+                            if ($table == "users" && ($ligne[4] != "admin") ) {
+                            //si table users, alors on peut supprimer les utilsateurs
+                                echo " <td>
+                                    <form action='delete_user.php' method='post' >
+                                    <input type='hidden' name='id_user_suppr' value='$ligne[0]'>
+                                    <input type='hidden' name='login_suppr' value='$ligne[1]'>
+                                    <button class='admin-btn-suppr' id='suppresion' type='submit'>Delete</button>
+                                    </form>
+                                </td>";
+                            }
+                            echo "</tr>";
+                        }
+                        echo "</table>";
+
+                }
+
+            ?>
+
+            <div class="admin-panel-users">
+                <div class="recherche">
+                    <h1>User Managment</h1>
+                    <p>Ici, vous pouvez consulter et gérer l'ensemble des utilisateur de la platforme.</p>
+                    <br>
+                    <p>Rechercher un utilisateur avec son login</p>
+
+                    <div class="admin-container-research">
+                        <form method="post" id='post-admin-up'>
+                            <input class='admin-btn global-navbar-links-connexion' id='users' type='submit' name="users" value="Afficher tous les utilisateurs">
+                        </form>
+
+                       <form method="post" class="form-search-user">
+                            <input class="admin-input-research" aria-label="input-research" id='researched' type='text' name="text" placeholder="ex : demba404">
+                            <input class='admin-btn global-navbar-links-connexion' id='search' type='submit' name='action' value='Rechercher'>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="affichage">
+                    <?php
+                        //On inclus la configuration d'accès à la base de donnée avant de commencer.
+                        require_once('config/config_bdd.php');
+
+                        //Si on appuie sur le bouton utilisateur, alors on récupère la table, on la met le nom de la table
+                        //dans un cookie pour la stocker et on appel la fonction avec le nom de la table en paramètre.
+                        if (isset($_POST["users"])) {
+                            $table = "users";
+                            setcookie("table", $table);
+                            $requete1 = "SELECT id_u, nom_u, email_u, register_at_u, type_u from $table";
+                            $requete2 = mysqli_query($connexion, $requete1);
+                            affichage_requete($table, $requete2);
+                        }
+
+                        //Si une recherche a été demandé.
+                        if (isset($_POST["text"]) && $_POST["action"] == "Rechercher") {
+                            // On appelle la fonction recherche avec le nom de la table et le texte entré.
+                            recherche("admin", "users");
+                        }
+                    ?>
+                </div>
+            </div>
+
         </div>
     </main>
     <?php include("imports/footer.html"); ?>

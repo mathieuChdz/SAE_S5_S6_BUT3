@@ -97,7 +97,7 @@
                                 </div>
 
                                 <div class="form-submit">
-                                    <input type="submit" name="envoyer" id="envoyer" value="Se connecter">
+                                    <input type="submit" name="envoyer" id="envoyer" value="S'inscrire">
                                     <div class="form-inscription">
                                         <p>Vous avez déjà un compte ?</p>
                                         <a href="connexion.php">Cliquez Ici !</a>
