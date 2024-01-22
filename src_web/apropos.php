@@ -77,9 +77,7 @@
                                     </div>
                                     <div class="team-item-main">
                                         <h3>Renouf Ugo</h3>
-                                        <p>Vivamus semper urna in mauris pretium gravida. Donec ac enim quam. Sed viverra purus quis ultricies auctor. 
-                                            Etiam ac aliquam ipsum. Proin gravida laoreet nisi, at egestas quam dapibus ac. Aenean iaculis fermentum tellus sed convallis. 
-                                            Etiam vitae leo eu dui suscipit feugiat. Proin porta justo urna, in tincidunt nunc aliquam pharetra. Integer in magna in mi semper tristique.
+                                        <p>"La logique vous conduira d’un point A à un point B. L'imagination et l'audace vous conduiront où vous le désirez." 
                                         </p>
                                     </div>
                                 </div>
@@ -98,9 +96,7 @@
                                     </div>
                                     <div class="team-item-main">
                                         <h3>Bullock Patrick</h3>
-                                        <p>Vivamus semper urna in mauris pretium gravida. Donec ac enim quam. Sed viverra purus quis ultricies auctor. 
-                                            Etiam ac aliquam ipsum. Proin gravida laoreet nisi, at egestas quam dapibus ac. Aenean iaculis fermentum tellus sed convallis. 
-                                            Etiam vitae leo eu dui suscipit feugiat. Proin porta justo urna, in tincidunt nunc aliquam pharetra. Integer in magna in mi semper tristique.
+                                        <p>"Une équipe n'est pas un groupe de personnes qui travaillent ensemble. Une équipe, ce sont des gens qui se font confiance."
                                         </p>
                                     </div>
                                 </div>                                
@@ -110,9 +106,8 @@
                                     </div>
                                     <div class="team-item-main">
                                         <h3>Guenfici Rayane</h3>
-                                        <p>Vivamus semper urna in mauris pretium gravida. Donec ac enim quam. Sed viverra purus quis ultricies auctor. 
-                                            Etiam ac aliquam ipsum. Proin gravida laoreet nisi, at egestas quam dapibus ac. Aenean iaculis fermentum tellus sed convallis. 
-                                            Etiam vitae leo eu dui suscipit feugiat. Proin porta justo urna, in tincidunt nunc aliquam pharetra. Integer in magna in mi semper tristique.
+                                        <p>"Bienvenue dans l'ère de l'informatique, où chaque ligne de code écrite ouvre une porte vers un avenir prometteur, façonné par l'imagination et la créativité humaine, où les possibilités sont aussi infinies que les bits dans un monde numérique en constante expansion."
+- ChatGPT 2024
                                         </p>
                                     </div>
                                 </div>                                
