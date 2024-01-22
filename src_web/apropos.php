@@ -73,7 +73,7 @@
                             <div class="sae-team-items">
                                 <div class="sae-team-item" id="one">
                                     <div class="team-item-img">
-                                        <img src="img/mate1.jpg" alt="photo du mate 1">
+                                        <img src="img/mate1.JPG" alt="photo du mate 1">
                                     </div>
                                     <div class="team-item-main">
                                         <h3>Renouf Ugo</h3>
@@ -85,7 +85,7 @@
                                 </div>
                                 <div class="sae-team-item" id="two">
                                     <div class="team-item-img">
-                                        <img src="img/mate2.jpg" alt="photo du mate 2">
+                                        <img src="img/mate2.JPG" alt="photo du mate 2">
                                     </div>
                                     <div class="team-item-main">
                                         <h3>Belaidi Elyas</h3>
@@ -94,7 +94,7 @@
                                 </div>                                
                                 <div class="sae-team-item" id="tree">
                                     <div class="team-item-img">
-                                        <img src="img/mate3.jpg" alt="photo du mate 3">
+                                        <img src="img/mate3.JPG" alt="photo du mate 3">
                                     </div>
                                     <div class="team-item-main">
                                         <h3>Bullock Patrick</h3>
@@ -106,7 +106,7 @@
                                 </div>                                
                                 <div class="sae-team-item" id="four">
                                     <div class="team-item-img">
-                                        <img src="img/mate4.jpg" alt="photo du mate 4">
+                                        <img src="img/mate4.JPG" alt="photo du mate 4">
                                     </div>
                                     <div class="team-item-main">
                                         <h3>Guenfici Rayane</h3>
@@ -118,7 +118,7 @@
                                 </div>                                
                                 <div class="sae-team-item" id="five">
                                     <div class="team-item-img">
-                                        <img src="img/mate5.jpg" alt="photo du mate 5">
+                                        <img src="img/mate5.JPG" alt="photo du mate 5">
                                     </div>
                                     <div class="team-item-main">
                                         <h3>Chedozeau Mathieu</h3>

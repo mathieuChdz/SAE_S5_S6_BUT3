@@ -13,14 +13,14 @@ if (isset($_POST['envoyer'], $_POST['e_t'], $_POST['m'])){
                 $arg3 = $_POST['t1'];
             }
             else{
-                $arg3 = "0";
+                $arg3 = "None";
             }
     
             if ($_POST['t2']!=null){
                 $arg4 = $_POST['t2'];
             }
             else{
-                $arg4 = "0";
+                $arg4 = "None";
 	    }
     
             $arg1 = $_POST['m'];
