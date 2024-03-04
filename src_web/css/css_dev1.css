@@ -676,3 +676,107 @@ ul li{
   max-width: 100%;
   border-radius: 0.5em;
 }
+
+
+/* ########################### popup settings ########################### */
+
+.popup-titre-icon{
+  z-index: 900;
+  position: fixed;
+  top: 95vh;
+  left: 1%;
+  color: white;
+}
+
+.popup-titre-icon span{
+  font-size: 2em;
+}
+
+.settings-popup{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.settings-popup span{
+  cursor: pointer;
+}
+
+.settings-popup-content{
+  display: none;
+  z-index: 300;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  list-style: unset;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.settings-popup-content-item{
+  position: fixed;
+  z-index: 100;
+  left: 35%;
+  top: 25%;
+  bottom: 30%;
+  width: 30%;
+  height: unset;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: var(--color-black);
+  border-radius: 7px;
+  border: solid 1px #000000ab;
+  /*max-width: 40rem;*/
+}
+
+.settings-popup-content-item h1{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.settings-popup-header{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.settings-popup-content span{
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #5c615ae6;
+}
+
+.settings-popup-content span:hover{
+  color: #00000061;
+  transition: 0.5s;
+}
+
+.settings-popup-content hr{
+  border-top: solid 1px #5c615ae6;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 1075px){
+  .popup-content-item{
+    left: 10%;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 580px){
+  .popup-content-item{
+    left: 5%;
+    width: 90%;
+  }
+}

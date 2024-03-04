@@ -108,3 +108,5 @@
         }
     </script>
 </nav>
+
+<?php include("popup_settings.html"); ?>
