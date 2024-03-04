@@ -92,6 +92,10 @@
                                             <h2>Paramètres</h2>
                                         </div>
                                         <div class="form-inputs">
+                                            <div class="form-number-nodes">
+                                                <label for="workers">Workers</label>
+                                                <input type="number" name="workers" id="workers" placeholder="nombres de workers (1 à 4)" min="1" max="4" required>
+                                            </div>
                                             <div class="form-iterations">
                                                 <label for="iterations">N</label>
                                                 <input type="number" name="iterations" id="iterations" placeholder="iterations" required>

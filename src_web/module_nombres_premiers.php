@@ -58,6 +58,10 @@ session_start();
                                             <h2>Paramètres</h2>
                                         </div>
                                         <div class="form-inputs">
+                                            <div class="form-number-nodes">
+                                                <label for="workers">Workers</label>
+                                                <input type="number" name="workers" id="workers" placeholder="nombres de workers (1 à 4)" min="1" max="4" required>
+                                            </div>
                                             <div class="form-number">
                                                 <label for="number">N</label>
                                                 <input type="number" name="number" id="number" placeholder="nombre" required>

@@ -26,7 +26,26 @@ if (isset($_POST['envoyer'], $_POST['e_t'], $_POST['m'])){
             $arg1 = $_POST['m'];
             $arg2 = $_POST['e_t'];
     
-            $resultat = exec("mpiexec -n 4 --host node1,node2,node3,node4 python3 Module_Proba/montecarlompi.py $arg1 $arg2 $arg3 $arg4 > resultat.txt 2>&1", $output, $return_var);
+            $arg_workers = $_POST['workers'];
+            echo $arg_workers;
+
+            if ($arg_workers == "1"){
+                $resultat = exec("mpiexec -n 1 --host node1 python3 Module_Proba/montecarlompi.py $arg1 $arg2 $arg3 $arg4 > resultat.txt 2>&1", $output, $return_var);
+            }
+
+            elseif ($arg_workers == "2"){
+                $resultat = exec("mpiexec -n 2 --host node1,node2 python3 Module_Proba/montecarlompi.py $arg1 $arg2 $arg3 $arg4 > resultat.txt 2>&1", $output, $return_var);
+            }
+
+            elseif ($arg_workers == "3"){
+                $resultat = exec("mpiexec -n 3 --host node1,node2,node3 python3 Module_Proba/montecarlompi.py $arg1 $arg2 $arg3 $arg4 > resultat.txt 2>&1", $output, $return_var);
+            }
+
+            elseif ($arg_workers == "4"){
+                $resultat = exec("mpiexec -n 4 --host node1,node2,node3,node4 python3 Module_Proba/montecarlompi.py $arg1 $arg2 $arg3 $arg4 > resultat.txt 2>&1", $output, $return_var);
+            }
+
+            
             $_SESSION['resultat'] = $resultat;
             header("Location: ../module_proba_monte_carlo.php?res=true#resultat");
     
